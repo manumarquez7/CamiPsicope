@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./favicon.png">
 
   <!-- Google Analytics 4 (activar cuando se tenga el ID real)
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -23,7 +25,7 @@
   <meta property="og:description"
     content="Licenciada en Psicopedagogía. Evaluación neurocognitiva infantil y adolescente. Enfoque integrador y trabajo interdisciplinario.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="./camila-cabana.png">
+  <meta property="og:image" content="https://manumarquez7.github.io/CamiPsicope/camila-cabana.png">
   <meta property="og:image:alt" content="Camila Cabaña psicopedagoga">
   <meta property="og:url" content="https://manumarquez7.github.io/CamiPsicope/">
   <meta name="robots" content="index, follow">
@@ -32,7 +34,7 @@
   <script type="application/ld+json">
   {
    "@context": "https://schema.org",
-   "@type": "HealthAndBeautyBusiness",
+   "@type": "LocalBusiness",
    "name": "Camila Cabaña",
    "jobTitle": "Psicopedagoga",
    "areaServed": "Río Grande, Tierra del Fuego, Argentina",
@@ -536,10 +538,10 @@
     .section-tag::before {
       content: '';
       display: inline-block;
-      width: 20px;
-      height: 2px;
+      width: 7px;
+      height: 7px;
       background: var(--mauve);
-      border-radius: 2px;
+      border-radius: 50%;
     }
 
     .section-title {
@@ -710,12 +712,13 @@
     }
 
     .service-card {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       border-radius: var(--radius);
       padding: 2.2rem;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(155, 114, 170, .1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .08), inset 0 1px 0 rgba(255, 255, 255, .6);
+      border: 1px solid rgba(255, 255, 255, 0.4);
       transition: all .35s cubic-bezier(.4, 0, .2, 1);
       position: relative;
       overflow: hidden;
@@ -736,9 +739,9 @@
     }
 
     .service-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 25px 60px rgba(0, 0, 0, .12);
-      border-color: rgba(155, 114, 170, .3);
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 28px 60px rgba(107, 78, 122, .15);
+      border-color: rgba(155, 114, 170, .4);
     }
 
     .service-card:hover::before {
@@ -1191,7 +1194,7 @@
     /* ── FOOTER ────────────────────────────────── */
     footer {
       background: var(--text);
-      color: rgba(255, 255, 255, .55);
+      color: rgba(255, 255, 255, .75);
       padding: 2rem;
       text-align: center;
       font-size: .82rem;
@@ -1312,6 +1315,19 @@
 
       .nav-links.show {
         display: flex;
+        animation: slideDown .3s ease;
+      }
+
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       .hamburger {
@@ -1361,7 +1377,18 @@
       }
     }
 
-    /* ── SITUACIONES COMUNES ─────────────────── */
+    /* ── SERVICE CARD IMAGE CLASS ───────────────── */
+    .service-img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 12px;
+      margin-bottom: 1.4rem;
+      margin-top: 1rem;
+      display: block;
+    }
+
     .situaciones {
       padding: 80px 2rem;
       background: var(--cream);
@@ -1385,6 +1412,63 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.2rem;
+    }
+
+    /* ── AUTORIDAD ─────────────────────────── */
+    .autoridad {
+      padding: 60px 2rem;
+      background: var(--white);
+      border-bottom: 1px solid rgba(155, 114, 170, .1);
+    }
+
+    .autoridad-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .autoridad-item i {
+      font-size: 1.6rem;
+      color: var(--mauve);
+      margin-bottom: .6rem;
+      display: block;
+    }
+
+    .autoridad-item strong {
+      display: block;
+      font-size: .95rem;
+      color: var(--text);
+      margin-bottom: .25rem;
+    }
+
+    .autoridad-item span {
+      font-size: .8rem;
+      color: var(--text-soft);
+    }
+
+    /* hero-extra */
+    .hero-extra {
+      font-size: .88rem;
+      color: var(--text-soft);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .mini-trust {
+      margin-top: 1rem;
+      font-size: .82rem;
+      color: var(--text-soft);
+      font-weight: 500;
+    }
+
+    @media (max-width: 800px) {
+      .autoridad-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
     }
 
     .situacion-chip {
@@ -1449,6 +1533,7 @@
           <i aria-hidden="true" class="fa-solid fa-graduation-cap"></i>
           Psicopedagoga — Río Grande, Tierra del Fuego
         </div>
+        <div class="hero-extra">Evaluaciones neurocognitivas con instrumentos estandarizados (WAIS IV · WISC V)</div>
         <h1 class="hero-title">
           Evaluación y acompañamiento psicopedagógico para <em>niños, adolescentes y adultos</em>
         </h1>
@@ -1485,6 +1570,9 @@
         <div style="margin-top:1.5rem;font-size:14px;color:#6b7280;">
           Acompañando a familias en procesos de evaluación y aprendizaje.
         </div>
+        <div class="mini-trust">
+          ⭐ Testimonios de familias que realizaron evaluaciones psicopedagógicas
+        </div>
       </div>
 
       <div class="hero-photo-wrap">
@@ -1503,30 +1591,37 @@
     </div>
   </header>
 
+  <!-- shape divider -->
+  <div style="line-height:0; margin-bottom:-2px;">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display:block;width:100%;height:80px;">
+      <path d="M0,0 C360,80 1080,0 1440,60 L1440,80 L0,80 Z" fill="#ffffff" />
+    </svg>
+  </div>
+
   <main>
-    <!-- ── TRUST BLOCK (CONFIANZA) ────────────────────── -->
-    <section class="trust reveal"
-      style="background: var(--white); padding: 60px 2rem; border-bottom: 1px solid rgba(155, 114, 170, 0.1);">
-      <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
-        <h3
-          style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; color: var(--mauve-dark); margin-bottom: 2rem;">
-          Profesional especializada</h3>
-        <ul
-          style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; color: var(--text-soft); font-weight: 500;">
-          <li style="display: flex; align-items: center; gap: 0.5rem;"><i aria-hidden="true"
-              class="fa-solid fa-circle-check" style="color: var(--sage); font-size: 1.2rem;"></i> Atención
-            personalizada</li>
-          <li style="display: flex; align-items: center; gap: 0.5rem;"><i aria-hidden="true"
-              class="fa-solid fa-circle-check" style="color: var(--sage); font-size: 1.2rem;"></i> Evaluaciones
-            profesionales</li>
-          <li style="display: flex; align-items: center; gap: 0.5rem;"><i aria-hidden="true"
-              class="fa-solid fa-circle-check" style="color: var(--sage); font-size: 1.2rem;"></i> Trabajo
-            interdisciplinario con escuelas
-          </li>
-          <li style="display: flex; align-items: center; gap: 0.5rem;"><i aria-hidden="true"
-              class="fa-solid fa-circle-check" style="color: var(--sage); font-size: 1.2rem;"></i> Informes clínicos
-            detallados</li>
-        </ul>
+    <!-- ── AUTORIDAD ───────────────────────────────────── -->
+    <section class="autoridad reveal">
+      <div class="autoridad-inner">
+        <div class="autoridad-item">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <strong>Licenciada en Psicopedagogía</strong>
+          <span>Universidad Católica de Córdoba</span>
+        </div>
+        <div class="autoridad-item">
+          <i class="fa-solid fa-brain"></i>
+          <strong>Evaluaciones Neurocognitivas</strong>
+          <span>Instrumentos estandarizados WAIS IV y WISC V</span>
+        </div>
+        <div class="autoridad-item">
+          <i class="fa-solid fa-scale-balanced"></i>
+          <strong>Diplomada en Psicopedagogía Forense</strong>
+          <span>Universidad Abierta Interamericana</span>
+        </div>
+        <div class="autoridad-item">
+          <i class="fa-solid fa-users"></i>
+          <strong>Trabajo interdisciplinario</strong>
+          <span>Articulación con profesionales, familia y escuela</span>
+        </div>
       </div>
     </section>
 
@@ -1597,13 +1692,17 @@
         <h2 class="section-title reveal">¿En qué situaciones puede
           <em>ayudar?</em>
         </h2>
+        <p class="reveal"
+          style="max-width:600px; margin: 0 auto 2.8rem auto; color: var(--text-soft); font-size: .97rem; line-height: 1.7;">
+          Muchas familias consultan cuando observan dificultades en la lectura, la escritura, la atención o el
+          aprendizaje escolar. La evaluación permite comprender el perfil cognitivo y orientar los pasos a seguir.
+        </p>
         <div class="services-grid">
           <div class="service-card reveal">
             <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-brain"></i></div>
             <h4>Evaluaciones Neurocognitivas</h4>
             <img src="Evaluaciones-Neurocognitivas.jpeg" alt="Materiales de evaluación neurocognitiva WAIS"
-              loading="lazy" decoding="async"
-              style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+              class="service-img" loading="lazy" decoding="async">
             <p>Evaluación integral del perfil cognitivo con instrumentos estandarizados (WAIS IV, WISC V) para conocer
               las fortalezas y dificultades de cada persona.</p>
             <span class="service-tag">Perfil Cognitivo</span>
@@ -1612,8 +1711,8 @@
             <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-book-open"></i></div>
             <h4>Dificultades en la Lectura y Escritura</h4>
             <img src="Dificultades-en-la-lectura-y-escritura.jpeg"
-              alt="Sesión de psicopedagogía para dificultades lectoras" loading="lazy" decoding="async"
-              style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+              alt="Sesión de psicopedagogía para dificultades lectoras" class="service-img" loading="lazy"
+              decoding="async">
             <p>Acompañamiento clínico para niños y adolescentes que presentan dificultades en la adquisición y el
               desarrollo de la lectura o la escritura.</p>
             <span class="service-tag">Aprendizaje</span>
@@ -1622,8 +1721,8 @@
             <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-puzzle-piece"></i></div>
             <h4>Memoria, Atención y Concentración</h4>
             <img src="Memoria-atencion-y-concentracion.jpeg"
-              alt="Intervención en dificultades de atención y concentración" loading="lazy" decoding="async"
-              style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+              alt="Intervención en dificultades de atención y concentración" class="service-img" loading="lazy"
+              decoding="async">
             <p>Evaluación e intervención en dificultades vinculadas a la atención, la memoria y la concentración, en
               articulación con el contexto escolar y familiar.</p>
             <span class="service-tag">Atención</span>
@@ -1632,8 +1731,7 @@
             <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-chart-line"></i></div>
             <h4>Herramientas y Técnicas de Estudio</h4>
             <img src="Herramientas-y-tecnicas-de-estudio.jpeg" alt="Acompañamiento en técnicas y hábitos de estudio"
-              loading="lazy" decoding="async"
-              style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+              class="service-img" loading="lazy" decoding="async">
             <p>Desarrollo de estrategias y hábitos de estudio personalizados para mejorar el rendimiento académico y la
               autonomía del estudiante.</p>
             <span class="service-tag">Rendimiento</span>
@@ -1642,8 +1740,7 @@
             <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-compass"></i></div>
             <h4>Orientación Vocacional</h4>
             <img src="Orientacion-vocacional.jpeg" alt="Proceso de orientación vocacional para adolescentes"
-              loading="lazy" decoding="async"
-              style="width: 100%; height: 240px; object-fit: cover; object-position: bottom; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+              class="service-img" style="object-position: bottom;" loading="lazy" decoding="async">
             <p>Proceso de acompañamiento para adolescentes y jóvenes que buscan identificar sus intereses, habilidades y
               posibles caminos académicos o profesionales.</p>
             <span class="service-tag">Vocación</span>
@@ -1652,8 +1749,7 @@
             <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-hands-holding-child"></i></div>
             <h4>Acompañamiento en el Aprendizaje</h4>
             <img src="Acompañamiento.png" alt="Acompañamiento interdisciplinario en el proceso de aprendizaje"
-              loading="lazy" decoding="async"
-              style="width: 100%; height: 240px; object-fit: cover; object-position: top; border-radius: 12px; margin-bottom: 1.4rem; margin-top: 1rem; display: block;">
+              class="service-img" loading="lazy" decoding="async">
             <p>Seguimiento continuo e interdisciplinario junto a escuelas y familias, para sostener el proceso de
               aprendizaje con una mirada integral.</p>
             <span class="service-tag">Seguimiento</span>
@@ -1661,6 +1757,20 @@
         </div>
       </div>
     </section>
+
+    <!-- CTA mid-page -->
+    <div class="reveal"
+      style="text-align:center; padding: 56px 2rem; background: var(--white); border-bottom: 1px solid rgba(155,114,170,.08);">
+      <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20vi%20tu%20p%C3%A1gina%20y%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n."
+        target="_blank" rel="noopener noreferrer" class="btn-primary" id="mid-cta-whatsapp"
+        onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'mid_page'});">
+        <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+      </a>
+      <div class="cta-trust" style="justify-content:center; margin-top:.7rem;">
+        <i class="fa-solid fa-lock"></i>
+        <span>Consulta confidencial • Respuesta dentro del día</span>
+      </div>
+    </div>
 
 
 
@@ -1782,6 +1892,21 @@
       </div>
     </section>
 
+    <!-- CTA post-testimonios -->
+    <div class="reveal" style="text-align:center; padding: 48px 2rem; background:var(--cream);">
+      <p style="font-size:.97rem; color:var(--text-soft); margin-bottom:1.2rem;">Si lo que leíste te identificó, este es
+        el momento de dar el primer paso.</p>
+      <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20vi%20los%20testimonios%20y%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n."
+        target="_blank" rel="noopener noreferrer" class="btn-wa" id="post-testi-whatsapp"
+        onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'post_testimonios'});">
+        <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+      </a>
+      <div class="cta-trust" style="justify-content:center; margin-top:.7rem;">
+        <i class="fa-solid fa-lock"></i>
+        <span>Consulta confidencial • Sin compromiso</span>
+      </div>
+    </div>
+
     <!-- ── FAQ ───────────────────────────────────────── -->
     <section class="faq" id="faq">
       <div class="faq-inner">
@@ -1889,6 +2014,9 @@
         <p>
           Podés comunicarte para recibir información sobre evaluaciones y acompañamiento psicopedagógico.
         </p>
+        <p style="font-size:.82rem; color:rgba(255,255,255,.65); margin-top:-.5rem; margin-bottom:.5rem;">
+          <i class="fa-regular fa-clock"></i> Turnos limitados por semana — Consultá disponibilidad
+        </p>
         <div class="cta-band-actions mb-2rem">
           <div class="hero-actions-col">
             <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20deseo%20pautar%20una%20primera%20consulta."
@@ -1906,12 +2034,36 @@
         </div>
       </div>
     </section>
+
+    <!-- bloque ubicación SEO -->
+    <section
+      style="background:var(--white); padding:48px 2rem; border-top:1px solid rgba(155,114,170,.08); text-align:center;">
+      <div style="max-width:700px; margin:0 auto;">
+        <p
+          style="font-size:.82rem; font-weight:600; letter-spacing:.08em; color:var(--mauve); text-transform:uppercase; margin-bottom:.6rem;">
+          Ubicación</p>
+        <h2 style="font-family:'DM Serif Display',serif; font-size:1.5rem; color:var(--text); margin-bottom:.8rem;">
+          Atención psicopedagógica en <em style="color:var(--mauve);">Río Grande, Tierra del Fuego</em>
+        </h2>
+        <p style="color:var(--text-soft); font-size:.93rem; line-height:1.7; margin-bottom:1.4rem;">
+          Evaluaciones neurocognitivas y acompañamiento psicopedagógico en Tierra del Fuego.
+          Atención presencial en Río Grande.
+        </p>
+      </div>
+    </section>
   </main>
 
   <!-- ── FOOTER ────────────────────────────────────── -->
   <footer>
     © 2026 <strong class="color-white-75">Camila Cabaña</strong> · Psicopedagoga ·
     <a href="mailto:camilacabana05@gmail.com" target="_blank" rel="noopener noreferrer">camilacabana05@gmail.com</a>
+    <div style="margin-top: .8rem;">
+      <a href="https://www.instagram.com/camii_psicope" target="_blank" rel="noopener noreferrer"
+        style="display:inline-flex;align-items:center;gap:.4rem;color:rgba(255,255,255,.8);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s;"
+        onmouseover="this.style.color='rgba(255,255,255,1)'" onmouseout="this.style.color='rgba(255,255,255,.8)'">
+        <i class="fa-brands fa-instagram" style="font-size:1.1rem;"></i> @camii_psicope
+      </a>
+    </div>
     <div
       style="margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,.1); font-size: 0.78rem; color: rgba(255, 255, 255, .65);">
       Diseño web por <a
