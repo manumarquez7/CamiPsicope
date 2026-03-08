@@ -2,11 +2,11 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="./favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./favicon.png">
 
-  <!-- Google Analytics 4 (activar cuando se tenga el ID real)
+    <!-- Google Analytics 4 (activar cuando se tenga el ID real)
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,21 +16,21 @@
   </script>
   -->
 
-  <title>Camila Cabaña | Psicopedagoga</title>
-  <meta name="description"
-    content="Evaluaciones neurocognitivas y acompañamiento psicopedagógico para niños y adolescentes. Atención profesional en Río Grande, Tierra del Fuego.">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta property="og:title" content="Camila Cabaña | Psicopedagoga">
-  <meta property="og:description"
-    content="Licenciada en Psicopedagogía. Evaluación neurocognitiva infantil y adolescente. Enfoque integrador y trabajo interdisciplinario.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://manumarquez7.github.io/CamiPsicope/camila-cabana.png">
-  <meta property="og:image:alt" content="Camila Cabaña psicopedagoga">
-  <meta property="og:url" content="https://manumarquez7.github.io/CamiPsicope/">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Camila Cabaña, Licenciada en Psicopedagogía">
-  <link rel="canonical" href="https://manumarquez7.github.io/CamiPsicope/">
-  <script type="application/ld+json">
+    <title>Camila Cabaña | Psicopedagoga</title>
+    <meta name="description"
+        content="Evaluaciones neurocognitivas y acompañamiento psicopedagógico para niños y adolescentes. Atención profesional en Río Grande, Tierra del Fuego.">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta property="og:title" content="Camila Cabaña | Psicopedagoga">
+    <meta property="og:description"
+        content="Licenciada en Psicopedagogía. Evaluación neurocognitiva infantil y adolescente. Enfoque integrador y trabajo interdisciplinario.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://manumarquez7.github.io/CamiPsicope/camila-cabana.png">
+    <meta property="og:image:alt" content="Camila Cabaña psicopedagoga">
+    <meta property="og:url" content="https://manumarquez7.github.io/CamiPsicope/">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Camila Cabaña, Licenciada en Psicopedagogía">
+    <link rel="canonical" href="https://manumarquez7.github.io/CamiPsicope/">
+    <script type="application/ld+json">
   {
    "@context": "https://schema.org",
    "@type": "LocalBusiness",
@@ -53,2086 +53,2301 @@
    ]
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    :root {
-      --mauve: #9B72AA;
-      --mauve-light: #C5A8CE;
-      --mauve-soft: #EDE0F2;
-      --mauve-dark: #6C4E7A;
-      --sage: #8FAF8A;
-      --sage-light: #D2E8CF;
-      --cream: #FAF7F5;
-      --text: #2A2A2A;
-      --text-soft: #5C5C6E;
-      --white: #FFFFFF;
-      --radius: 1.25rem;
-      --shadow-sm: 0 12px 40px rgba(0, 0, 0, .08);
-      --shadow-md: 0 10px 40px rgba(0, 0, 0, .06);
-      --shadow-lg: 0 20px 60px rgba(107, 78, 122, .22);
-      --transition: all .35s cubic-bezier(.4, 0, .2, 1);
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--cream);
-      color: var(--text);
-      overflow-x: hidden;
-    }
-
-    /* ── SCROLLBAR ─────────────────────────────── */
-    ::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: var(--cream);
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: var(--mauve-light);
-      border-radius: 10px;
-    }
-
-    /* ── NAV ───────────────────────────────────── */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      padding: 0 2rem;
-      height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: rgba(250, 247, 245, .85);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(155, 114, 170, .12);
-      transition: var(--transition);
-    }
-
-    nav.scrolled {
-      box-shadow: var(--shadow-sm);
-    }
-
-    .nav-brand {
-      display: flex;
-      align-items: center;
-      gap: .6rem;
-      text-decoration: none;
-    }
-
-    .nav-brand-dot {
-      width: 10px;
-      height: 10px;
-      background: var(--mauve);
-      border-radius: 50%;
-      box-shadow: 0 0 0 3px rgba(155, 114, 170, .25);
-    }
-
-    .nav-brand span {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.2rem;
-      color: var(--mauve-dark);
-      letter-spacing: -.3px;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: .875rem;
-      font-weight: 500;
-      color: var(--text-soft);
-      text-decoration: none;
-      transition: var(--transition);
-      position: relative;
-    }
-
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      right: 100%;
-      height: 2px;
-      background: var(--mauve);
-      border-radius: 2px;
-      transition: right .3s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--mauve);
-    }
-
-    .nav-links a:hover::after {
-      right: 0;
-    }
-
-    .nav-cta {
-      background: var(--mauve);
-      color: var(--white) !important;
-      padding: .5rem 1.4rem;
-      border-radius: 50px;
-      font-weight: 600 !important;
-      font-size: .875rem;
-      transition: var(--transition);
-      box-shadow: 0 4px 14px rgba(155, 114, 170, .4);
-    }
-
-    .nav-cta:hover {
-      background: var(--mauve-dark) !important;
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(155, 114, 170, .5);
-    }
-
-    .nav-cta::after {
-      display: none !important;
-    }
-
-    /* hamburger */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 4px;
-    }
-
-    .hamburger span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--mauve-dark);
-      border-radius: 2px;
-      transition: var(--transition);
-    }
-
-    /* ── HERO ──────────────────────────────────── */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 100px 2rem 60px;
-      background: linear-gradient(180deg,
-          rgba(155, 114, 170, 0.05) 0%,
-          rgba(210, 232, 207, 0.08) 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-blob {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(80px);
-      opacity: .55;
-      pointer-events: none;
-    }
-
-    .hero-blob-1 {
-      width: 520px;
-      height: 520px;
-      background: radial-gradient(circle, #C5A8CE 0%, transparent 70%);
-      top: -120px;
-      right: -80px;
-    }
-
-    .hero-blob-2 {
-      width: 380px;
-      height: 380px;
-      background: radial-gradient(circle, #D2E8CF 0%, transparent 70%);
-      bottom: 0;
-      left: -60px;
-    }
-
-    .hero-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      background: var(--mauve-soft);
-      color: var(--mauve-dark);
-      font-size: .78rem;
-      font-weight: 600;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      padding: .35rem 1rem;
-      border-radius: 50px;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-badge i {
-      font-size: .75rem;
-    }
-
-    .hero-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(2.4rem, 5vw, 3.6rem);
-      line-height: 1.15;
-      color: var(--text);
-      margin-bottom: 1.25rem;
-    }
-
-    .hero-title em {
-      font-style: italic;
-      color: var(--mauve);
-    }
-
-    .hero-desc {
-      font-size: 1.05rem;
-      color: var(--text-soft);
-      line-height: 1.75;
-      margin-bottom: 2rem;
-      max-width: 460px;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      gap: .55rem;
-      background: var(--mauve);
-      color: var(--white);
-      padding: .9rem 2rem;
-      border-radius: 50px;
-      font-size: .95rem;
-      font-weight: 600;
-      text-decoration: none;
-      box-shadow: 0 6px 20px rgba(155, 114, 170, .45);
-      transition: all .25s ease;
-    }
-
-    .btn-primary:hover {
-      background: var(--mauve-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
-    }
-
-    .microcopy {
-      display: block;
-      font-size: .75rem;
-      color: var(--text-soft);
-      margin-top: .6rem;
-      font-weight: 500;
-      text-align: center;
-    }
-
-    .microcopy i {
-      color: var(--sage);
-      margin-right: .3rem;
-    }
-
-    .cta-trust {
-      display: flex;
-      align-items: center;
-      gap: .4rem;
-      font-size: .78rem;
-      color: #6b7280;
-      margin-top: .6rem;
-    }
-
-    .cta-trust i {
-      color: #25D366;
-      font-size: .8rem;
-    }
-
-    .btn-ghost {
-      display: inline-flex;
-      align-items: center;
-      gap: .55rem;
-      color: var(--mauve-dark);
-      font-size: .95rem;
-      font-weight: 600;
-      text-decoration: none;
-      padding: .9rem 1.6rem;
-      border-radius: 50px;
-      border: 1.5px solid var(--mauve-light);
-      transition: all .25s ease;
-    }
-
-    .btn-ghost:hover {
-      background: var(--mauve-soft);
-      border-color: var(--mauve);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
-    }
-
-    .hero-stats {
-      display: flex;
-      gap: 2rem;
-      margin-top: 2.5rem;
-    }
-
-    .stat {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .stat-num {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.8rem;
-      color: var(--mauve-dark);
-      line-height: 1;
-    }
-
-    .stat-label {
-      font-size: .78rem;
-      color: var(--text-soft);
-      margin-top: .2rem;
-    }
-
-    /* photo card */
-    .hero-photo-wrap {
-      display: flex;
-      justify-content: center;
-      position: relative;
-    }
-
-    .hero-photo-card {
-      position: relative;
-      width: 360px;
-      height: 440px;
-    }
-
-    .hero-photo-bg {
-      position: absolute;
-      inset: 0;
-      border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
-      background: linear-gradient(135deg, var(--mauve-soft) 0%, var(--sage-light) 100%);
-      animation: morphBlob 8s ease-in-out infinite;
-    }
-
-    @keyframes morphBlob {
-
-      0%,
-      100% {
-        border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
-      }
-
-      25% {
-        border-radius: 45% 55% 40% 60% / 60% 40% 55% 45%;
-      }
-
-      50% {
-        border-radius: 50% 50% 60% 40% / 45% 60% 40% 55%;
-      }
-
-      75% {
-        border-radius: 55% 45% 50% 50% / 55% 45% 55% 45%;
-      }
-    }
-
-    .hero-photo-img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 340px;
-      height: 340px;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 50%;
-      box-shadow: 0 20px 40px rgba(107, 78, 122, .2);
-    }
-
-    .hero-photo-pill {
-      position: absolute;
-      background: var(--white);
-      border-radius: 50px;
-      padding: .65rem 1.1rem;
-      box-shadow: var(--shadow-md);
-      display: flex;
-      align-items: center;
-      gap: .55rem;
-      font-size: .78rem;
-      font-weight: 600;
-      color: var(--text);
-      white-space: nowrap;
-      animation: floatPill 4s ease-in-out infinite;
-    }
-
-    .hero-photo-pill i {
-      color: var(--mauve);
-      font-size: .9rem;
-    }
-
-    .pill-1 {
-      top: 30px;
-      right: -10px;
-      animation-delay: 0s;
-    }
-
-    .pill-2 {
-      bottom: 60px;
-      left: -20px;
-      animation-delay: 1.5s;
-    }
-
-    @keyframes floatPill {
-
-      0%,
-      100% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(-8px);
-      }
-    }
-
-    /* ── SECTION UTILS ─────────────────────────── */
-    .section-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: .45rem;
-      font-size: .75rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--mauve);
-      margin-bottom: .75rem;
-    }
-
-    .section-tag::before {
-      content: '';
-      display: inline-block;
-      width: 7px;
-      height: 7px;
-      background: var(--mauve);
-      border-radius: 50%;
-    }
-
-    .section-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(1.9rem, 4vw, 2.8rem);
-      color: var(--text);
-      line-height: 1.2;
-      margin-bottom: 1rem;
-    }
-
-    .section-title em {
-      color: var(--mauve);
-      font-style: italic;
-    }
-
-    .section-subtitle {
-      font-size: 1rem;
-      color: var(--text-soft);
-      line-height: 1.75;
-      max-width: 560px;
-    }
-
-    /* ── ABOUT ─────────────────────────────────── */
-    .about {
-      padding: 120px 2rem;
-      background: var(--white);
-    }
-
-    .about-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: center;
-    }
-
-    .about-img-wrap {
-      position: relative;
-    }
-
-    .about-img-frame {
-      width: 100%;
-      aspect-ratio: 4/5;
-      border-radius: 2rem;
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      background: var(--mauve-soft);
-    }
-
-    .about-img-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
-    }
-
-    .about-accent {
-      position: absolute;
-      width: 160px;
-      height: 160px;
-      border: 3px solid var(--mauve-light);
-      border-radius: 1.5rem;
-      bottom: -20px;
-      right: -20px;
-      z-index: -1;
-    }
-
-    .about-card-float {
-      position: absolute;
-      top: -18px;
-      left: -22px;
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 1rem 1.25rem;
-      box-shadow: var(--shadow-md);
-    }
-
-    .about-card-float .icon-wrap {
-      width: 40px;
-      height: 40px;
-      background: var(--mauve-soft);
-      border-radius: .75rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--mauve);
-      font-size: 1rem;
-      margin-bottom: .5rem;
-    }
-
-    .about-card-float p {
-      font-size: .75rem;
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    .about-card-float span {
-      font-size: .68rem;
-      color: var(--text-soft);
-    }
-
-    .about-text p {
-      font-size: 1rem;
-      color: var(--text-soft);
-      line-height: 1.85;
-      margin-bottom: 1.2rem;
-    }
-
-    .about-perks {
-      display: flex;
-      flex-direction: column;
-      gap: .9rem;
-      margin-top: 1.8rem;
-    }
-
-    .perk {
-      display: flex;
-      align-items: flex-start;
-      gap: .85rem;
-    }
-
-    .perk-icon {
-      flex-shrink: 0;
-      width: 38px;
-      height: 38px;
-      background: var(--mauve-soft);
-      border-radius: .75rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--mauve);
-      font-size: .9rem;
-    }
-
-    .perk-text strong {
-      display: block;
-      font-size: .9rem;
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    .perk-text span {
-      font-size: .82rem;
-      color: var(--text-soft);
-    }
-
-    /* ── SERVICES ──────────────────────────────── */
-    .services {
-      padding: 120px 2rem;
-      background: linear-gradient(180deg, var(--cream) 0%, var(--mauve-soft) 100%);
-    }
-
-    .services-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .services-head {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-    }
-
-    .service-card {
-      background: rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-radius: var(--radius);
-      padding: 2.2rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, .08), inset 0 1px 0 rgba(255, 255, 255, .6);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      transition: all .35s cubic-bezier(.4, 0, .2, 1);
-      position: relative;
-      overflow: hidden;
-      cursor: default;
-    }
-
-    .service-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--mauve) 0%, var(--sage) 100%);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform .4s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 28px 60px rgba(107, 78, 122, .15);
-      border-color: rgba(155, 114, 170, .4);
-    }
-
-    .service-card:hover::before {
-      transform: scaleX(1);
-    }
-
-    .service-icon {
-      width: 54px;
-      height: 54px;
-      background: var(--mauve-soft);
-      border-radius: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      color: var(--mauve);
-      margin-bottom: 1.4rem;
-      transition: var(--transition);
-    }
-
-    .service-card:hover .service-icon {
-      background: var(--mauve);
-      color: var(--white);
-    }
-
-    .service-card h4 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.125rem;
-      color: var(--text);
-      margin-bottom: .7rem;
-    }
-
-    .service-card p {
-      font-size: .875rem;
-      color: var(--text-soft);
-      line-height: 1.7;
-    }
-
-    .service-tag {
-      display: inline-block;
-      margin-top: 1.2rem;
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .05em;
-      color: var(--mauve);
-      background: var(--mauve-soft);
-      padding: .2rem .75rem;
-      border-radius: 50px;
-    }
-
-    /* ── PROCESS ───────────────────────────────── */
-    .process {
-      padding: 120px 2rem;
-      background: var(--white);
-    }
-
-    .process-inner {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .process-head {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-
-    .process-steps {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-
-    .process-step {
-      display: grid;
-      grid-template-columns: 60px 1fr;
-      gap: 1.5rem;
-      padding-bottom: 2.5rem;
-      position: relative;
-    }
-
-    .process-step:not(:last-child) .step-number::after {
-      content: '';
-      position: absolute;
-      top: 60px;
-      left: 29px;
-      width: 2px;
-      height: calc(100% - 30px);
-      background: linear-gradient(180deg, var(--mauve-light) 0%, transparent 100%);
-    }
-
-    .step-number {
-      position: relative;
-      width: 60px;
-      height: 60px;
-      background: var(--mauve-soft);
-      border-radius: 50%;
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.2rem;
-      color: var(--mauve-dark);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      border: 2px solid var(--mauve-light);
-    }
-
-    .step-content {
-      padding-top: .8rem;
-    }
-
-    .step-content h4 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: .4rem;
-    }
-
-    .step-content p {
-      font-size: .9rem;
-      color: var(--text-soft);
-      line-height: 1.7;
-    }
-
-    /* ── TESTIMONIALS ──────────────────────────── */
-    .testimonials {
-      padding: 120px 2rem;
-      background: linear-gradient(135deg, var(--mauve-dark) 0%, #5A3A6A 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .testimonials::before {
-      content: '"';
-      position: absolute;
-      top: -60px;
-      left: 5%;
-      font-family: 'DM Serif Display', serif;
-      font-size: 28rem;
-      color: rgba(255, 255, 255, .04);
-      line-height: 1;
-      pointer-events: none;
-    }
-
-    .testimonials-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-    }
-
-    .testimonials-head {
-      text-align: center;
-      margin-bottom: 3.5rem;
-    }
-
-    .testimonials-head .section-tag {
-      color: var(--mauve-light);
-    }
-
-    .testimonials-head .section-tag::before {
-      background: var(--mauve-light);
-    }
-
-    .testimonials-head .section-title {
-      color: var(--white);
-    }
-
-    .testi-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-    }
-
-    .testi-card {
-      background: rgba(255, 255, 255, .08);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, .12);
-      border-radius: var(--radius);
-      padding: 2rem;
-      transition: var(--transition);
-    }
-
-    .testi-card:hover {
-      background: rgba(255, 255, 255, .13);
-      transform: translateY(-4px);
-    }
-
-    .testi-stars {
-      display: flex;
-      gap: 3px;
-      margin-bottom: 1rem;
-    }
-
-    .testi-stars i {
-      color: #F5C842;
-      font-size: .85rem;
-    }
-
-    .testi-card blockquote {
-      font-size: .9rem;
-      color: rgba(255, 255, 255, .85);
-      line-height: 1.75;
-      font-style: italic;
-      margin-bottom: 1.4rem;
-    }
-
-    .testi-author {
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-    }
-
-    .testi-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: .85rem;
-      color: var(--white);
-      flex-shrink: 0;
-    }
-
-    .testi-avatar.av1 {
-      background: linear-gradient(135deg, #C5A8CE, #9B72AA);
-    }
-
-    .testi-avatar.av2 {
-      background: linear-gradient(135deg, #8FAF8A, #5A8A55);
-    }
-
-    .testi-avatar.av3 {
-      background: linear-gradient(135deg, #A8BECE, #5A7A9B);
-    }
-
-    .testi-name {
-      font-weight: 600;
-      font-size: .85rem;
-      color: var(--white);
-      display: block;
-    }
-
-    .testi-role {
-      font-size: .75rem;
-      color: rgba(255, 255, 255, .5);
-    }
-
-    /* ── FAQ ───────────────────────────────────── */
-    .faq {
-      padding: 120px 2rem;
-      background: var(--cream);
-    }
-
-    .faq-inner {
-      max-width: 780px;
-      margin: 0 auto;
-    }
-
-    .faq-head {
-      text-align: center;
-      margin-bottom: 3.5rem;
-    }
-
-    .faq-item {
-      border-bottom: 1px solid rgba(155, 114, 170, .18);
-    }
-
-    .faq-question {
-      width: 100%;
-      background: none;
-      border: none;
-      text-align: left;
-      font-family: inherit;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.35rem 0;
-      cursor: pointer;
-      gap: 1rem;
-    }
-
-    .faq-question span {
-      font-size: .97rem;
-      font-weight: 600;
-      color: var(--text);
-      transition: color .25s;
-    }
-
-    .faq-question:hover span {
-      color: var(--mauve);
-    }
-
-    .faq-icon {
-      width: 30px;
-      height: 30px;
-      background: var(--mauve-soft);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      color: var(--mauve);
-      font-size: .75rem;
-      transition: var(--transition);
-    }
-
-    .faq-item.open .faq-icon {
-      background: var(--mauve);
-      color: var(--white);
-      transform: rotate(45deg);
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height .45s cubic-bezier(.4, 0, .2, 1);
-    }
-
-    .faq-item.open .faq-answer {
-      max-height: 500px;
-    }
-
-    .faq-answer p {
-      font-size: .9rem;
-      color: var(--text-soft);
-      line-height: 1.75;
-      padding-bottom: 1.35rem;
-    }
-
-    /* ── CTA BAND ──────────────────────────────── */
-    .cta-band {
-      padding: 80px 2rem;
-      background: var(--white);
-      text-align: center;
-    }
-
-    .cta-band-inner {
-      max-width: 680px;
-      margin: 0 auto;
-    }
-
-    .cta-band h2 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      color: var(--text);
-      margin-bottom: 1rem;
-      line-height: 1.25;
-    }
-
-    .cta-band h2 em {
-      color: var(--mauve);
-      font-style: italic;
-    }
-
-    .cta-band p {
-      font-size: 1rem;
-      color: var(--text-soft);
-      margin-bottom: 2.2rem;
-      line-height: 1.7;
-    }
-
-    .cta-band-actions {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .btn-wa {
-      display: inline-flex;
-      align-items: center;
-      gap: .6rem;
-      background: #25D366;
-      color: var(--white);
-      padding: .9rem 2rem;
-      border-radius: 50px;
-      font-size: .95rem;
-      font-weight: 600;
-      text-decoration: none;
-      box-shadow: 0 6px 20px rgba(37, 211, 102, .4);
-      transition: var(--transition);
-    }
-
-    .btn-wa:hover {
-      background: #1ebe5c;
-      transform: translateY(-2px);
-      box-shadow: 0 10px 28px rgba(37, 211, 102, .5);
-    }
-
-    .btn-wa i {
-      font-size: 1.1rem;
-    }
-
-    /* ── UTILITIES ─────────────────────────────── */
-    .hero-actions-container {
-      margin-bottom: .8rem;
-    }
-
-    .hero-actions-col {
-      display: flex;
-      flex-direction: column;
-      width: max-content;
-      align-items: flex-start;
-    }
-
-    .align-start {
-      align-self: flex-start;
-    }
-
-    .margin-top-sm {
-      margin-top: .2rem;
-    }
-
-    .microcopy-left {
-      text-align: left;
-      margin-left: .5rem;
-    }
-
-    .mb-2rem {
-      margin-bottom: 2rem;
-    }
-
-    .mx-auto {
-      margin: 0 auto;
-    }
-
-    .color-white-75 {
-      color: rgba(255, 255, 255, .75);
-    }
-
-    .color-wa-green {
-      color: #25D366;
-    }
-
-    .white {
-      color: var(--white);
-    }
-
-    .justify-center {
-      justify-content: center;
-    }
-
-    .about-card-float-pos {
-      left: -22px;
-      top: -18px;
-    }
-
-    /* ── FOOTER ────────────────────────────────── */
-    footer {
-      background: var(--text);
-      color: rgba(255, 255, 255, .75);
-      padding: 2rem;
-      text-align: center;
-      font-size: .82rem;
-    }
-
-    footer a {
-      color: var(--mauve-light);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: var(--white);
-    }
-
-    /* ── WA FLOAT ──────────────────────────────── */
-    .wa-float {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background: #25D366;
-      color: white;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
-      z-index: 999;
-      text-decoration: none;
-      animation: pulse-wa 2.5s ease-in-out infinite;
-      transition: var(--transition);
-    }
-
-    .wa-float:hover {
-      transform: scale(1.12);
-      box-shadow: 0 8px 30px rgba(37, 211, 102, .65);
-    }
-
-    @keyframes pulse-wa {
-
-      0%,
-      100% {
-        box-shadow: 0 6px 24px rgba(37, 211, 102, .5), 0 0 0 0 rgba(37, 211, 102, .35);
-      }
-
-      50% {
-        box-shadow: 0 6px 24px rgba(37, 211, 102, .5), 0 0 0 14px rgba(37, 211, 102, 0);
-      }
-    }
-
-    /* ── REVEAL ANIMATIONS ─────────────────────── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all .8s cubic-bezier(.22, .61, .36, 1);
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* ── RESPONSIVE ────────────────────────────── */
-    @media (max-width: 900px) {
-      .hero-inner {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .hero-photo-wrap {
-        display: none;
-      }
-
-      .hero-actions {
-        justify-content: center;
-      }
-
-      .hero-stats {
-        justify-content: center;
-      }
-
-      .hero-desc {
-        margin: 0 auto 2rem;
-      }
-
-      .about-inner {
-        grid-template-columns: 1fr;
-      }
-
-      .about-img-wrap {
-        display: none;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .testi-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .nav-links {
-        position: absolute;
-        top: 72px;
-        right: 0;
-        left: 0;
-        background: var(--white);
-        flex-direction: column;
-        padding: 1.5rem 0;
-        gap: 1.5rem;
-        display: none;
-        box-shadow: var(--shadow-sm);
-        align-items: center;
-        z-index: 99;
-      }
-
-      .nav-links.show {
-        display: flex;
-        animation: slideDown .3s ease;
-      }
-
-      @keyframes slideDown {
-        from {
-          opacity: 0;
-          transform: translateY(-10px);
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
-        to {
-          opacity: 1;
-          transform: translateY(0);
+        :root {
+            --mauve: #9B72AA;
+            --mauve-light: #C5A8CE;
+            --mauve-soft: #EDE0F2;
+            --mauve-dark: #6C4E7A;
+            --sage: #8FAF8A;
+            --sage-light: #D2E8CF;
+            --cream: #FAF7F5;
+            --text: #2A2A2A;
+            --text-soft: #5C5C6E;
+            --white: #FFFFFF;
+            --radius: 1.25rem;
+            --shadow-sm: 0 12px 40px rgba(0, 0, 0, .08);
+            --shadow-md: 0 10px 40px rgba(0, 0, 0, .06);
+            --shadow-lg: 0 20px 60px rgba(107, 78, 122, .22);
+            --transition: all .35s cubic-bezier(.4, 0, .2, 1);
         }
-      }
 
-      .hamburger {
-        display: flex;
-      }
+        html {
+            scroll-behavior: smooth;
+        }
 
-      .hero {
-        min-height: auto;
-        padding: 90px 1.5rem 50px;
-      }
-    }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            overflow-x: hidden;
+        }
 
-    @media (max-width: 600px) {
-      .cta-band-actions {
-        flex-direction: column;
-        align-items: center;
-      }
+        /* ── SCROLLBAR ─────────────────────────────── */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
 
-      .btn-primary {
-        width: 100%;
-        justify-content: center;
-      }
+        ::-webkit-scrollbar-track {
+            background: var(--cream);
+        }
 
-      .btn-ghost {
-        width: 100%;
-        justify-content: center;
-      }
-    }
+        ::-webkit-scrollbar-thumb {
+            background: var(--mauve-light);
+            border-radius: 10px;
+        }
 
-    /* ── SERVICE CARD IMAGES ANIMATION & HOVER ── */
-    .service-card img {
-      transition: transform .6s ease;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, .06);
-      opacity: 0;
-      transform: translateY(10px);
-      animation: imgFade .8s ease forwards;
-    }
+        /* ── NAV ───────────────────────────────────── */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 0 2rem;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(250, 247, 245, .85);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(155, 114, 170, .12);
+            transition: var(--transition);
+        }
 
-    .service-card:hover img {
-      transform: scale(1.05);
-    }
+        nav.scrolled {
+            box-shadow: var(--shadow-sm);
+        }
 
-    @keyframes imgFade {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+            text-decoration: none;
+        }
 
-    /* ── SERVICE CARD IMAGE CLASS ───────────────── */
-    .service-img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-      object-position: top;
-      border-radius: 12px;
-      margin-bottom: 1.4rem;
-      margin-top: 1rem;
-      display: block;
-    }
+        .nav-brand-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--mauve);
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(155, 114, 170, .25);
+        }
 
-    .situaciones {
-      padding: 80px 2rem;
-      background: var(--cream);
-    }
+        .nav-brand span {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.2rem;
+            color: var(--mauve-dark);
+            letter-spacing: -.3px;
+        }
 
-    .situaciones-inner {
-      max-width: 1000px;
-      margin: 0 auto;
-      text-align: center;
-    }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
 
-    .situaciones-inner .section-tag {
-      margin-bottom: 1rem;
-    }
+        .nav-links a {
+            font-size: .875rem;
+            font-weight: 500;
+            color: var(--text-soft);
+            text-decoration: none;
+            transition: var(--transition);
+            position: relative;
+        }
 
-    .situaciones-inner .section-title {
-      margin-bottom: 2.8rem;
-    }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 100%;
+            height: 2px;
+            background: var(--mauve);
+            border-radius: 2px;
+            transition: right .3s ease;
+        }
 
-    .situaciones-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.2rem;
-    }
+        .nav-links a:hover {
+            color: var(--mauve);
+        }
 
-    /* ── AUTORIDAD ─────────────────────────── */
-    .autoridad {
-      padding: 60px 2rem;
-      background: var(--white);
-      border-bottom: 1px solid rgba(155, 114, 170, .1);
-    }
+        .nav-links a:hover::after {
+            right: 0;
+        }
 
-    .autoridad-inner {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
-      text-align: center;
-    }
+        .nav-cta {
+            background: var(--mauve);
+            color: var(--white) !important;
+            padding: .5rem 1.4rem;
+            border-radius: 50px;
+            font-weight: 600 !important;
+            font-size: .875rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 14px rgba(155, 114, 170, .4);
+        }
 
-    .autoridad-item i {
-      font-size: 1.6rem;
-      color: var(--mauve);
-      margin-bottom: .6rem;
-      display: block;
-    }
+        .nav-cta:hover {
+            background: var(--mauve-dark) !important;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(155, 114, 170, .5);
+        }
 
-    .autoridad-item strong {
-      display: block;
-      font-size: .95rem;
-      color: var(--text);
-      margin-bottom: .25rem;
-    }
+        .nav-cta::after {
+            display: none !important;
+        }
 
-    .autoridad-item span {
-      font-size: .8rem;
-      color: var(--text-soft);
-    }
+        /* hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
 
-    /* hero-extra */
-    .hero-extra {
-      font-size: .88rem;
-      color: var(--text-soft);
-      margin-bottom: 1rem;
-      font-weight: 500;
-    }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--mauve-dark);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
 
-    .mini-trust {
-      margin-top: 1rem;
-      font-size: .82rem;
-      color: var(--text-soft);
-      font-weight: 500;
-    }
+        /* ── HERO ──────────────────────────────────── */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 100px 2rem 60px;
+            background: linear-gradient(180deg,
+                    rgba(155, 114, 170, 0.05) 0%,
+                    rgba(210, 232, 207, 0.08) 100%);
+            position: relative;
+            overflow: hidden;
+        }
 
-    @media (max-width: 800px) {
-      .autoridad-inner {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-      }
-    }
+        .hero-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: .55;
+            pointer-events: none;
+        }
 
-    .situacion-chip {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(6px);
-      border: 1px solid rgba(155, 114, 170, .15);
-      border-radius: 14px;
-      padding: 1.4rem 1.6rem;
-      font-size: .95rem;
-      font-weight: 600;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: .8rem;
-      text-align: left;
-      transition: all .3s ease;
-      cursor: default;
-    }
+        .hero-blob-1 {
+            width: 520px;
+            height: 520px;
+            background: radial-gradient(circle, #C5A8CE 0%, transparent 70%);
+            top: -120px;
+            right: -80px;
+        }
 
-    .situacion-chip:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(155, 114, 170, .12);
-      border-color: rgba(155, 114, 170, .35);
-    }
+        .hero-blob-2 {
+            width: 380px;
+            height: 380px;
+            background: radial-gradient(circle, #D2E8CF 0%, transparent 70%);
+            bottom: 0;
+            left: -60px;
+        }
 
-    .situacion-chip i {
-      color: var(--mauve);
-      font-size: 1.1rem;
-      flex-shrink: 0;
-    }
-  </style>
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            background: var(--mauve-soft);
+            color: var(--mauve-dark);
+            font-size: .78rem;
+            font-weight: 600;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            padding: .35rem 1rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-badge i {
+            font-size: .75rem;
+        }
+
+        .hero-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(2.4rem, 5vw, 3.6rem);
+            line-height: 1.15;
+            color: var(--text);
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-title em {
+            font-style: italic;
+            color: var(--mauve);
+        }
+
+        .hero-desc {
+            font-size: 1.05rem;
+            color: var(--text-soft);
+            line-height: 1.75;
+            margin-bottom: 2rem;
+            max-width: 460px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: .55rem;
+            background: var(--mauve);
+            color: var(--white);
+            padding: .9rem 2rem;
+            border-radius: 50px;
+            font-size: .95rem;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(155, 114, 170, .45);
+            transition: all .25s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--mauve-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+        }
+
+        .microcopy {
+            display: block;
+            font-size: .75rem;
+            color: var(--text-soft);
+            margin-top: .6rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .microcopy i {
+            color: var(--sage);
+            margin-right: .3rem;
+        }
+
+        .cta-trust {
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            font-size: .78rem;
+            color: #6b7280;
+            margin-top: .6rem;
+        }
+
+        .cta-trust i {
+            color: #25D366;
+            font-size: .8rem;
+        }
+
+        .btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: .55rem;
+            color: var(--mauve-dark);
+            font-size: .95rem;
+            font-weight: 600;
+            text-decoration: none;
+            padding: .9rem 1.6rem;
+            border-radius: 50px;
+            border: 1.5px solid var(--mauve-light);
+            transition: all .25s ease;
+        }
+
+        .btn-ghost:hover {
+            background: var(--mauve-soft);
+            border-color: var(--mauve);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2.5rem;
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-num {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.8rem;
+            color: var(--mauve-dark);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: .78rem;
+            color: var(--text-soft);
+            margin-top: .2rem;
+        }
+
+        /* photo card */
+        .hero-photo-wrap {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-photo-card {
+            position: relative;
+            width: 360px;
+            height: 440px;
+        }
+
+        .hero-photo-bg {
+            position: absolute;
+            inset: 0;
+            border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
+            background: linear-gradient(135deg, var(--mauve-soft) 0%, var(--sage-light) 100%);
+            animation: morphBlob 8s ease-in-out infinite;
+        }
+
+        @keyframes morphBlob {
+
+            0%,
+            100% {
+                border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
+            }
+
+            25% {
+                border-radius: 45% 55% 40% 60% / 60% 40% 55% 45%;
+            }
+
+            50% {
+                border-radius: 50% 50% 60% 40% / 45% 60% 40% 55%;
+            }
+
+            75% {
+                border-radius: 55% 45% 50% 50% / 55% 45% 55% 45%;
+            }
+        }
+
+        .hero-photo-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 340px;
+            height: 340px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            box-shadow: 0 20px 40px rgba(107, 78, 122, .2);
+        }
+
+        .hero-photo-pill {
+            position: absolute;
+            background: var(--white);
+            border-radius: 50px;
+            padding: .65rem 1.1rem;
+            box-shadow: var(--shadow-md);
+            display: flex;
+            align-items: center;
+            gap: .55rem;
+            font-size: .78rem;
+            font-weight: 600;
+            color: var(--text);
+            white-space: nowrap;
+            animation: floatPill 4s ease-in-out infinite;
+        }
+
+        .hero-photo-pill i {
+            color: var(--mauve);
+            font-size: .9rem;
+        }
+
+        .pill-1 {
+            top: 30px;
+            right: -10px;
+            animation-delay: 0s;
+        }
+
+        .pill-2 {
+            bottom: 60px;
+            left: -20px;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes floatPill {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        /* ── SECTION UTILS ─────────────────────────── */
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: .45rem;
+            font-size: .75rem;
+            font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--mauve);
+            margin-bottom: .75rem;
+        }
+
+        .section-tag::before {
+            content: '';
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            background: var(--mauve);
+            border-radius: 50%;
+        }
+
+        .section-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(1.9rem, 4vw, 2.8rem);
+            color: var(--text);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .section-title em {
+            color: var(--mauve);
+            font-style: italic;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            color: var(--text-soft);
+            line-height: 1.75;
+            max-width: 560px;
+        }
+
+        /* ── ABOUT ─────────────────────────────────── */
+        .about {
+            padding: 120px 2rem;
+            background: var(--white);
+        }
+
+        .about-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .about-img-wrap {
+            position: relative;
+        }
+
+        .about-img-frame {
+            width: 100%;
+            aspect-ratio: 4/5;
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            background: var(--mauve-soft);
+        }
+
+        .about-img-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .about-accent {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            border: 3px solid var(--mauve-light);
+            border-radius: 1.5rem;
+            bottom: -20px;
+            right: -20px;
+            z-index: -1;
+        }
+
+        .about-card-float {
+            position: absolute;
+            top: -18px;
+            left: -22px;
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 1rem 1.25rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .about-card-float .icon-wrap {
+            width: 40px;
+            height: 40px;
+            background: var(--mauve-soft);
+            border-radius: .75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--mauve);
+            font-size: 1rem;
+            margin-bottom: .5rem;
+        }
+
+        .about-card-float p {
+            font-size: .75rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .about-card-float span {
+            font-size: .68rem;
+            color: var(--text-soft);
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            color: var(--text-soft);
+            line-height: 1.85;
+            margin-bottom: 1.2rem;
+        }
+
+        .about-perks {
+            display: flex;
+            flex-direction: column;
+            gap: .9rem;
+            margin-top: 1.8rem;
+        }
+
+        .perk {
+            display: flex;
+            align-items: flex-start;
+            gap: .85rem;
+        }
+
+        .perk-icon {
+            flex-shrink: 0;
+            width: 38px;
+            height: 38px;
+            background: var(--mauve-soft);
+            border-radius: .75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--mauve);
+            font-size: .9rem;
+        }
+
+        .perk-text strong {
+            display: block;
+            font-size: .9rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .perk-text span {
+            font-size: .82rem;
+            color: var(--text-soft);
+        }
+
+        /* ── SERVICES ──────────────────────────────── */
+        .services {
+            padding: 120px 2rem;
+            background: linear-gradient(180deg, var(--cream) 0%, var(--mauve-soft) 100%);
+        }
+
+        .services-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .services-head {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-radius: var(--radius);
+            padding: 2.2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08), inset 0 1px 0 rgba(255, 255, 255, .6);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            transition: all .35s cubic-bezier(.4, 0, .2, 1);
+            position: relative;
+            overflow: hidden;
+            cursor: default;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--mauve) 0%, var(--sage) 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .4s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 28px 60px rgba(107, 78, 122, .15);
+            border-color: rgba(155, 114, 170, .4);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 54px;
+            height: 54px;
+            background: var(--mauve-soft);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--mauve);
+            margin-bottom: 1.4rem;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--mauve);
+            color: var(--white);
+        }
+
+        .service-card h4 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.125rem;
+            color: var(--text);
+            margin-bottom: .7rem;
+        }
+
+        .service-card p {
+            font-size: .875rem;
+            color: var(--text-soft);
+            line-height: 1.7;
+        }
+
+        .service-tag {
+            display: inline-block;
+            margin-top: 1.2rem;
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .05em;
+            color: var(--mauve);
+            background: var(--mauve-soft);
+            padding: .2rem .75rem;
+            border-radius: 50px;
+        }
+
+        /* ── PROCESS ───────────────────────────────── */
+        .process {
+            padding: 120px 2rem;
+            background: var(--white);
+        }
+
+        .process-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .process-head {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .process-step {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            gap: 1.5rem;
+            padding-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .process-step:not(:last-child) .step-number::after {
+            content: '';
+            position: absolute;
+            top: 60px;
+            left: 29px;
+            width: 2px;
+            height: calc(100% - 30px);
+            background: linear-gradient(180deg, var(--mauve-light) 0%, transparent 100%);
+        }
+
+        .step-number {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: var(--mauve-soft);
+            border-radius: 50%;
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.2rem;
+            color: var(--mauve-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            border: 2px solid var(--mauve-light);
+        }
+
+        .step-content {
+            padding-top: .8rem;
+        }
+
+        .step-content h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: .4rem;
+        }
+
+        .step-content p {
+            font-size: .9rem;
+            color: var(--text-soft);
+            line-height: 1.7;
+        }
+
+        /* ── TESTIMONIALS ──────────────────────────── */
+        .testimonials {
+            padding: 120px 2rem;
+            background: linear-gradient(135deg, var(--mauve-dark) 0%, #5A3A6A 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials::before {
+            content: '"';
+            position: absolute;
+            top: -60px;
+            left: 5%;
+            font-family: 'DM Serif Display', serif;
+            font-size: 28rem;
+            color: rgba(255, 255, 255, .04);
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .testimonials-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonials-head {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .testimonials-head .section-tag {
+            color: var(--mauve-light);
+        }
+
+        .testimonials-head .section-tag::before {
+            background: var(--mauve-light);
+        }
+
+        .testimonials-head .section-title {
+            color: var(--white);
+        }
+
+        .testi-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .testi-card {
+            background: rgba(255, 255, 255, .08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: var(--radius);
+            padding: 2rem;
+            transition: var(--transition);
+        }
+
+        .testi-card:hover {
+            background: rgba(255, 255, 255, .13);
+            transform: translateY(-4px);
+        }
+
+        .testi-stars {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 1rem;
+        }
+
+        .testi-stars i {
+            color: #F5C842;
+            font-size: .85rem;
+        }
+
+        .testi-card blockquote {
+            font-size: .9rem;
+            color: rgba(255, 255, 255, .85);
+            line-height: 1.75;
+            font-style: italic;
+            margin-bottom: 1.4rem;
+        }
+
+        .testi-author {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+        }
+
+        .testi-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: .85rem;
+            color: var(--white);
+            flex-shrink: 0;
+        }
+
+        .testi-avatar.av1 {
+            background: linear-gradient(135deg, #C5A8CE, #9B72AA);
+        }
+
+        .testi-avatar.av2 {
+            background: linear-gradient(135deg, #8FAF8A, #5A8A55);
+        }
+
+        .testi-avatar.av3 {
+            background: linear-gradient(135deg, #A8BECE, #5A7A9B);
+        }
+
+        .testi-name {
+            font-weight: 600;
+            font-size: .85rem;
+            color: var(--white);
+            display: block;
+        }
+
+        .testi-role {
+            font-size: .75rem;
+            color: rgba(255, 255, 255, .5);
+        }
+
+        /* ── RECURSOS (LINKTREE STYLE) ──────────────── */
+        .recursos {
+            padding: 100px 2rem;
+            background: linear-gradient(180deg, var(--white) 0%, var(--mauve-soft) 100%);
+        }
+
+        .recursos-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .recursos-head {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .recursos-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.2rem;
+        }
+
+        .recurso-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(155, 114, 170, 0.3);
+            padding: 0.75rem;
+            border-radius: 60px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all .3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .recurso-link:hover {
+            background: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(155, 114, 170, 0.15);
+            border-color: var(--mauve);
+        }
+
+        .recurso-link::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 0;
+            background: var(--mauve-soft);
+            z-index: 0;
+            transition: width .4s ease;
+            border-radius: 60px;
+        }
+
+        .recurso-link:hover::before {
+            width: 100%;
+        }
+
+        .rl-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .rl-left {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--white);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            flex-shrink: 0;
+            color: var(--mauve);
+            font-size: 1.2rem;
+        }
+
+        .rl-left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 2px;
+            border: 2px solid var(--mauve);
+        }
+
+        .rl-center {
+            flex: 1;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            line-height: 1.3;
+            letter-spacing: 0.05em;
+            padding: 0 1rem;
+        }
+
+        .rl-right {
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-soft);
+            font-size: 1.1rem;
+        }
+
+        .rl-soon {
+            display: block;
+            font-size: 0.7rem;
+            color: var(--mauve-dark);
+            font-weight: 500;
+            margin-top: 0.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* ── FAQ ───────────────────────────────────── */
+        .faq {
+            padding: 120px 2rem;
+            background: var(--cream);
+        }
+
+        .faq-inner {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .faq-head {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(155, 114, 170, .18);
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-family: inherit;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.35rem 0;
+            cursor: pointer;
+            gap: 1rem;
+        }
+
+        .faq-question span {
+            font-size: .97rem;
+            font-weight: 600;
+            color: var(--text);
+            transition: color .25s;
+        }
+
+        .faq-question:hover span {
+            color: var(--mauve);
+        }
+
+        .faq-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--mauve-soft);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--mauve);
+            font-size: .75rem;
+            transition: var(--transition);
+        }
+
+        .faq-item.open .faq-icon {
+            background: var(--mauve);
+            color: var(--white);
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .45s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            font-size: .9rem;
+            color: var(--text-soft);
+            line-height: 1.75;
+            padding-bottom: 1.35rem;
+        }
+
+        /* ── CTA BAND ──────────────────────────────── */
+        .cta-band {
+            padding: 80px 2rem;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .cta-band-inner {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .cta-band h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            color: var(--text);
+            margin-bottom: 1rem;
+            line-height: 1.25;
+        }
+
+        .cta-band h2 em {
+            color: var(--mauve);
+            font-style: italic;
+        }
+
+        .cta-band p {
+            font-size: 1rem;
+            color: var(--text-soft);
+            margin-bottom: 2.2rem;
+            line-height: 1.7;
+        }
+
+        .cta-band-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .btn-wa {
+            display: inline-flex;
+            align-items: center;
+            gap: .6rem;
+            background: #25D366;
+            color: var(--white);
+            padding: .9rem 2rem;
+            border-radius: 50px;
+            font-size: .95rem;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, .4);
+            transition: var(--transition);
+        }
+
+        .btn-wa:hover {
+            background: #1ebe5c;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(37, 211, 102, .5);
+        }
+
+        .btn-wa i {
+            font-size: 1.1rem;
+        }
+
+        /* ── UTILITIES ─────────────────────────────── */
+        .hero-actions-container {
+            margin-bottom: .8rem;
+        }
+
+        .hero-actions-col {
+            display: flex;
+            flex-direction: column;
+            width: max-content;
+            align-items: flex-start;
+        }
+
+        .align-start {
+            align-self: flex-start;
+        }
+
+        .margin-top-sm {
+            margin-top: .2rem;
+        }
+
+        .microcopy-left {
+            text-align: left;
+            margin-left: .5rem;
+        }
+
+        .mb-2rem {
+            margin-bottom: 2rem;
+        }
+
+        .mx-auto {
+            margin: 0 auto;
+        }
+
+        .color-white-75 {
+            color: rgba(255, 255, 255, .75);
+        }
+
+        .color-wa-green {
+            color: #25D366;
+        }
+
+        .white {
+            color: var(--white);
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .about-card-float-pos {
+            left: -22px;
+            top: -18px;
+        }
+
+        /* ── FOOTER ────────────────────────────────── */
+        footer {
+            background: var(--text);
+            color: rgba(255, 255, 255, .75);
+            padding: 2rem;
+            text-align: center;
+            font-size: .82rem;
+        }
+
+        footer a {
+            color: var(--mauve-light);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--white);
+        }
+
+        /* ── WA FLOAT ──────────────────────────────── */
+        .wa-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+            z-index: 999;
+            text-decoration: none;
+            animation: pulse-wa 2.5s ease-in-out infinite;
+            transition: var(--transition);
+        }
+
+        .wa-float:hover {
+            transform: scale(1.12);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, .65);
+        }
+
+        @keyframes pulse-wa {
+
+            0%,
+            100% {
+                box-shadow: 0 6px 24px rgba(37, 211, 102, .5), 0 0 0 0 rgba(37, 211, 102, .35);
+            }
+
+            50% {
+                box-shadow: 0 6px 24px rgba(37, 211, 102, .5), 0 0 0 14px rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* ── REVEAL ANIMATIONS ─────────────────────── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all .8s cubic-bezier(.22, .61, .36, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── RESPONSIVE ────────────────────────────── */
+        @media (max-width: 900px) {
+            .hero-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-photo-wrap {
+                display: none;
+            }
+
+            .hero-actions {
+                justify-content: center;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .hero-desc {
+                margin: 0 auto 2rem;
+            }
+
+            .about-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .about-img-wrap {
+                display: none;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testi-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 72px;
+                right: 0;
+                left: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 1.5rem 0;
+                gap: 1.5rem;
+                display: none;
+                box-shadow: var(--shadow-sm);
+                align-items: center;
+                z-index: 99;
+            }
+
+            .nav-links.show {
+                display: flex;
+                animation: slideDown .3s ease;
+            }
+
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 90px 1.5rem 50px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .cta-band-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-primary {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .btn-ghost {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* ── SERVICE CARD IMAGES ANIMATION & HOVER ── */
+        .service-card img {
+            transition: transform .6s ease;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, .06);
+            opacity: 0;
+            transform: translateY(10px);
+            animation: imgFade .8s ease forwards;
+        }
+
+        .service-card:hover img {
+            transform: scale(1.05);
+        }
+
+        @keyframes imgFade {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ── SERVICE CARD IMAGE CLASS ───────────────── */
+        .service-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 12px;
+            margin-bottom: 1.4rem;
+            margin-top: 1rem;
+            display: block;
+        }
+
+        .situaciones {
+            padding: 80px 2rem;
+            background: var(--cream);
+        }
+
+        .situaciones-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .situaciones-inner .section-tag {
+            margin-bottom: 1rem;
+        }
+
+        .situaciones-inner .section-title {
+            margin-bottom: 2.8rem;
+        }
+
+        .situaciones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+        }
+
+        /* ── AUTORIDAD ─────────────────────────── */
+        .autoridad {
+            padding: 60px 2rem;
+            background: var(--white);
+            border-bottom: 1px solid rgba(155, 114, 170, .1);
+        }
+
+        .autoridad-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .autoridad-item i {
+            font-size: 1.6rem;
+            color: var(--mauve);
+            margin-bottom: .6rem;
+            display: block;
+        }
+
+        .autoridad-item strong {
+            display: block;
+            font-size: .95rem;
+            color: var(--text);
+            margin-bottom: .25rem;
+        }
+
+        .autoridad-item span {
+            font-size: .8rem;
+            color: var(--text-soft);
+        }
+
+        /* hero-extra */
+        .hero-extra {
+            font-size: .88rem;
+            color: var(--text-soft);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .mini-trust {
+            margin-top: 1rem;
+            font-size: .82rem;
+            color: var(--text-soft);
+            font-weight: 500;
+        }
+
+        @media (max-width: 800px) {
+            .autoridad-inner {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        .situacion-chip {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(155, 114, 170, .15);
+            border-radius: 14px;
+            padding: 1.4rem 1.6rem;
+            font-size: .95rem;
+            font-weight: 600;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            text-align: left;
+            transition: all .3s ease;
+            cursor: default;
+        }
+
+        .situacion-chip:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(155, 114, 170, .12);
+            border-color: rgba(155, 114, 170, .35);
+        }
+
+        .situacion-chip i {
+            color: var(--mauve);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- ── NAV ──────────────────────────────────────── -->
-  <nav id="navbar">
-    <a class="nav-brand" href="#">
-      <span class="nav-brand-dot"></span>
-      <span>Camila Cabaña</span>
+    <!-- ── NAV ──────────────────────────────────────── -->
+    <nav id="navbar">
+        <a class="nav-brand" href="#">
+            <span class="nav-brand-dot"></span>
+            <span>Camila Cabaña</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proceso">¿Cómo funciona?</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#faq">Preguntas</a></li>
+            <li><a href="#contacto" class="nav-cta">Solicitar turno</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ── HERO ─────────────────────────────────────── -->
+    <header class="hero" id="inicio">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i aria-hidden="true" class="fa-solid fa-graduation-cap"></i>
+                    Psicopedagoga — Río Grande, Tierra del Fuego
+                </div>
+                <h1 class="hero-title">
+                    Evaluación y acompañamiento psicopedagógico para <em>niños, adolescentes y adultos</em>
+                </h1>
+                <p class="hero-desc">
+                    Acompaño procesos vinculados a dificultades de aprendizaje, desarrollo cognitivo, orientación
+                    vocacional y
+                    evaluación psicopedagógica.
+                </p>
+                <div class="hero-actions hero-actions-container">
+                    <div class="hero-actions-col">
+                        <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20vi%20tu%20p%C3%A1gina%20y%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n%20para%20mi%20hijo."
+                            target="_blank" rel="noopener noreferrer" class="btn-primary" id="hero-cta-main"
+                            onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'hero'});">
+                            <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Consultar por evaluación
+                            psicopedagógica
+                        </a>
+                        <div class="cta-trust">
+                            <i class="fa-solid fa-shield-heart"></i>
+                            <span>Respuesta dentro del día • Consulta inicial orientativa</span>
+                        </div>
+                    </div>
+                    <a href="#servicios" class="btn-ghost align-start margin-top-sm" id="hero-cta-sec">
+                        <i aria-hidden="true" class="fa-solid fa-arrow-down"></i> Ver servicios
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">Discapacidad</span>
+                        <span class="stat-label">Evaluación y acompañamiento</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Personalizado</span>
+                    </div>
+                </div>
+                <div style="margin-top:1.5rem;font-size:14px;color:#6b7280;">
+                    Acompañando a familias en procesos de evaluación y aprendizaje.
+                </div>
+                <div class="mini-trust">
+                    ⭐ Testimonios de familias que realizaron evaluaciones psicopedagógicas
+                </div>
+            </div>
+
+            <div class="hero-photo-wrap">
+                <div class="hero-photo-card">
+                    <div class="hero-photo-bg"></div>
+                    <img src="./camila-cabana.png" alt="Camila Cabaña, psicopedagoga" loading="eager"
+                        fetchpriority="high" decoding="async" class="hero-photo-img">
+                    <div class="hero-photo-pill pill-1">
+                        <i aria-hidden="true" class="fa-solid fa-brain"></i> Evaluaciones neurocognitivas
+                    </div>
+                    <div class="hero-photo-pill pill-2">
+                        <i aria-hidden="true" class="fa-solid fa-user-check"></i> Atención personalizada
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- shape divider -->
+    <div style="line-height:0; margin-bottom:-2px;">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display:block;width:100%;height:80px;">
+            <path d="M0,0 C360,80 1080,0 1440,60 L1440,80 L0,80 Z" fill="#ffffff" />
+        </svg>
+    </div>
+
+    <main>
+        <!-- ── AUTORIDAD ───────────────────────────────────── -->
+        <section class="autoridad reveal">
+            <div class="autoridad-inner">
+                <div class="autoridad-item">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <strong>Licenciada en Psicopedagogía</strong>
+                    <span>Universidad Católica de Córdoba</span>
+                </div>
+                <div class="autoridad-item">
+                    <i class="fa-solid fa-brain"></i>
+                    <strong>Evaluaciones Neurocognitivas</strong>
+                    <span>Instrumentos estandarizados WAIS IV y WISC V</span>
+                </div>
+                <div class="autoridad-item">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <strong>Diplomada en Psicopedagogía Forense</strong>
+                    <span>Universidad Abierta Interamericana</span>
+                </div>
+                <div class="autoridad-item">
+                    <i class="fa-solid fa-users"></i>
+                    <strong>Trabajo interdisciplinario</strong>
+                    <span>Articulación con profesionales, familia y escuela</span>
+                
+                    </div>
+            </div>
+        </section>
+
+        <!-- ── SOBRE MÍ ──────────────────────────────────── -->
+        <section class="about" id="sobre-mi">
+            <div class="about-inner">
+                <div class="about-img-wrap reveal">
+                    <div class="about-img-frame">
+                        <img src="cami-cabana.jpeg" alt="Camila Cabaña, foto profesional en consultorio" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="about-accent"></div>
+                    <div class="about-card-float about-card-float-pos">
+                        <div class="icon-wrap"><i aria-hidden="true" class="fa-solid fa-graduation-cap"></i></div>
+                        <p>Licenciada en Psicopedagogía</p>
+                        <span>Universidad Católica de Córdoba</span>
+                    </div>
+                </div>
+
+                <div class="about-text reveal">
+                    <div class="section-tag">El Enfoque</div>
+                    <h2 class="section-title">Detrás de cada consulta hay una historia que <em>merece ser escuchada</em>
+                    </h2>
+                    <p>
+                        Mi enfoque es integrador, combinando perspectivas cognitivas, socioculturales y
+                        neuropsicológicas.
+                    </p>
+                    <p>
+                        Considero fundamental tanto los procesos internos del aprendizaje como el contexto familiar y
+                        escolar,
+                        priorizando el trabajo interdisciplinario con otros profesionales.
+                    </p>
+                    <div class="about-perks">
+                        <div class="perk">
+                            <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-shield-cat"></i></div>
+                            <div class="perk-text">
+                                <strong>Diplomada en Psicopedagogía Forense</strong>
+                                <span>Universidad Abierta Interamericana — 2024</span>
+                            </div>
+                        </div>
+                        <div class="perk">
+                            <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-users-viewfinder"></i></div>
+                            <div class="perk-text">
+                                <strong>Evaluaciones Neurocognitivas</strong>
+                                <span>Manejo de instrumentos estandarizados, incluyendo WAIS IV y WISC V.</span>
+                            </div>
+                        </div>
+                        <div class="perk">
+                            <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-seedling"></i></div>
+                            <div class="perk-text">
+                                <strong>Perfil de Pacientes</strong>
+                                <span>Atención a niños, adolescentes y adultos.</span>
+                            </div>
+                        </div>
+                        <div class="perk">
+                            <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-calendar-check"></i></div>
+                            <div class="perk-text">
+                                <strong>2 Años de Experiencia Clínica</strong>
+                                <span>Acompañando procesos de evaluación y seguimiento psicopedagógico desde
+                                    2024.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── SITUACIONES COMUNES ─────────────────────────── -->
+        <section class="situaciones" id="servicios">
+            <div class="situaciones-inner">
+                <div class="section-tag reveal" style="display:inline-block;">Psicopedagogía</div>
+                <h2 class="section-title reveal">¿En qué situaciones puede
+                    <em>ayudar?</em>
+                </h2>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-brain"></i></div>
+                        <h4>Evaluaciones Neurocognitivas</h4>
+                        <img src="./Evaluaciones-Neurocognitivas.jpeg"
+                            alt="Materiales de evaluación neurocognitiva WAIS" class="service-img" loading="eager"
+                            decoding="async">
+                        <p>Evaluación integral del perfil cognitivo con instrumentos estandarizados (WAIS IV, WISC V)
+                            para conocer
+                            las fortalezas y dificultades de cada persona.</p>
+                        <span class="service-tag">Perfil Cognitivo</span>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-book-open"></i></div>
+                        <h4>Dificultades en la Lectura y Escritura</h4>
+                        <img src="./Dificultades-en-la-lectura-y-escritura.jpeg"
+                            alt="Sesión de psicopedagogía para dificultades lectoras" class="service-img"
+                            loading="eager" decoding="async">
+                        <p>Acompañamiento clínico para niños y adolescentes que presentan dificultades en la adquisición
+                            y el
+                            desarrollo de la lectura o la escritura.</p>
+                        <span class="service-tag">Aprendizaje</span>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-puzzle-piece"></i></div>
+                        <h4>Memoria, Atención y Concentración</h4>
+                        <img src="Memoria-atencion-y-concentracion.jpeg"
+                            alt="Intervención en dificultades de atención y concentración" class="service-img"
+                            loading="lazy" decoding="async">
+                        <p>Evaluación e intervención en dificultades vinculadas a la atención, la memoria y la
+                            concentración, en
+                            articulación con el contexto escolar y familiar.</p>
+                        <span class="service-tag">Atención</span>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-chart-line"></i></div>
+                        <h4>Estrategias y Técnicas de Estudio</h4>
+                        <img src="./Herramientas-y-tecnicas-de-estudio.jpeg"
+                            alt="Acompañamiento en técnicas y hábitos de estudio" class="service-img" loading="lazy"
+                            decoding="async">
+                        <p>Desarrollo de estrategias y hábitos de estudio personalizados para mejorar el rendimiento
+                            académico y la
+                            autonomía del estudiante.</p>
+                        <span class="service-tag">Rendimiento</span>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-compass"></i></div>
+                        <h4>Orientación Vocacional</h4>
+                        <img src="./Orientacion-vocacional.jpeg"
+                            alt="Proceso de orientación vocacional para adolescentes" class="service-img"
+                            style="object-position: bottom;" loading="lazy" decoding="async">
+                        <p>Proceso de acompañamiento para adolescentes y jóvenes que buscan identificar sus intereses,
+                            habilidades y
+                            posibles caminos académicos o profesionales.</p>
+                        <span class="service-tag">Vocación</span>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-hands-holding-child"></i>
+                        </div>
+                        <h4>Acompañamiento en el Aprendizaje</h4>
+                        <img src="./Acompañamiento.png"
+                            alt="Acompañamiento interdisciplinario en el proceso de aprendizaje" class="service-img"
+                            loading="lazy" decoding="async">
+                        <p>Seguimiento continuo e interdisciplinario junto a escuelas y familias, para sostener el
+                            proceso de
+                            aprendizaje con una mirada integral.</p>
+                        <span class="service-tag">Seguimiento</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA mid-page -->
+        <div class="reveal"
+            style="text-align:center; padding: 56px 2rem; background: var(--white); border-bottom: 1px solid rgba(155,114,170,.08);">
+            <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20vi%20tu%20p%C3%A1gina%20y%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n."
+                target="_blank" rel="noopener noreferrer" class="btn-primary" id="mid-cta-whatsapp"
+                onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'mid_page'});">
+                <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+            </a>
+            <div class="cta-trust" style="justify-content:center; margin-top:.7rem;">
+                <i class="fa-solid fa-lock"></i>
+                <span>Consulta confidencial • Respuesta dentro del día</span>
+            </div>
+        </div>
+
+
+
+        <!-- ── PROCESO ───────────────────────────────────── -->
+        <section class="process" id="proceso">
+            <div class="process-inner">
+                <div class="process-head reveal">
+                    <div class="section-tag">¿Cómo funciona?</div>
+                    <h2 class="section-title">El camino hacia el <em>cambio</em></h2>
+                    <p class="section-subtitle mx-auto">
+                        Un proceso claro y acompañado desde el primer contacto hasta el resultado.
+                    </p>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step reveal">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Primera consulta</h4>
+                            <p>Nos reunimos para comprender tu situación, responder tus dudas y evaluar juntos el mejor
+                                camino a
+                                seguir. Sin compromiso.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Evaluación neurocognitiva</h4>
+                            <p>Realizamos un proceso de evaluación neurocognitiva estructurado en 3 a 6 sesiones
+                                mediante instrumentos
+                                estandarizados.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Informes profesionales</h4>
+                            <p>Te explico los resultados de forma clara a través de una devolución y te entrego tu
+                                informe profesional
+                                detallado.</p>
+                        </div>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Trabajo interdisciplinario</h4>
+                            <p>Seguimiento continuo y foco en el trabajo interdisciplinario con profesionales, familia y
+                                escuela.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── TESTIMONIOS ───────────────────────────────── -->
+        <section class="testimonials" id="testimonios">
+            <div class="testimonials-inner">
+                <div class="testimonials-head reveal">
+                    <div class="section-tag">Testimonios</div>
+                    <h2 class="section-title white">Experiencias de familias que acompañé</h2>
+                </div>
+                <div class="testi-grid">
+                    <div class="testi-card reveal">
+                        <div class="testi-stars">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true"
+                                class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "En el año que Theo asistió conocí a una profesional súper amorosa, atenta y predispuesta
+                            con los niños.
+                            Siempre brindó la mejor atención, comprendiendo cada situación y acompañándonos con mucha
+                            paciencia y
+                            dedicación.
+                            Durante la evaluación neurocognitiva nos explicó cada paso con claridad y nos dio mucha
+                            tranquilidad.
+                            Una profesional increíble."
+                        </blockquote>
+                        <div class="testi-author">
+                            <div class="testi-avatar av1"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
+                            <div>
+                                <span class="testi-name">Melanie Echeverría</span>
+                                <span class="testi-role">Mamá de Theo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card reveal">
+                        <div class="testi-stars">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true"
+                                class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "Quiero compartir nuestra experiencia con Camila. Desde el primer momento nos recibió con
+                            mucho cariño y
+                            dedicación.
+                            Mi hijo siempre esperaba con entusiasmo sus sesiones, donde también había momentos de juego
+                            que le
+                            encantaban.
+                            Es una profesional muy cálida y estamos muy agradecidos por todo el acompañamiento."
+                        </blockquote>
+                        <div class="testi-author">
+                            <div class="testi-avatar av2"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
+                            <div>
+                                <span class="testi-name">Laura López</span>
+                                <span class="testi-role">Mamá de Thomas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card reveal">
+                        <div class="testi-stars">
+                            <i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true"
+                                class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "El proceso con la psicopedagoga fue muy positivo durante todo el tiempo que trabajamos
+                            juntos.
+                            Es una excelente profesional y el acompañamiento fue de gran ayuda."
+                        </blockquote>
+                        <div class="testi-author">
+                            <div class="testi-avatar av3"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
+                            <div>
+                                <span class="testi-name">Diego García</span>
+                                <span class="testi-role">Papá de Max</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA post-testimonios -->
+        <div class="reveal" style="text-align:center; padding: 48px 2rem; background:var(--cream);">
+            <p style="font-size:.97rem; color:var(--text-soft); margin-bottom:1.2rem;">Si lo que leíste te identificó,
+                este es
+                el momento de dar el primer paso.</p>
+            <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20vi%20los%20testimonios%20y%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n."
+                target="_blank" rel="noopener noreferrer" class="btn-wa" id="post-testi-whatsapp"
+                onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'post_testimonios'});">
+                <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+            </a>
+            <div class="cta-trust" style="justify-content:center; margin-top:.7rem;">
+                <i class="fa-solid fa-lock"></i>
+                <span>Consulta confidencial • Sin compromiso</span>
+            </div>
+        </div>
+
+        <!-- ── RECURSOS / LINKTREE ───────────────────────── -->
+        <section class="recursos" id="recursos">
+            <div class="recursos-inner">
+                <div class="recursos-head reveal">
+                    <div class="section-tag">Descargables</div>
+                    <h2 class="section-title">Material <em>Gratuito</em></h2>
+                    <p class="section-subtitle mx-auto">
+                        Explorá los recursos, calendarios y actividades que preparé especialmente para acompañarte.
+                    </p>
+                </div>
+
+                <div class="recursos-list">
+                    <!-- Link 1: Material Gratuito -->
+                    <a href="https://drive.google.com/drive/folders/1B2FHsDS5p208VBO56JNyV8-1CAd5sRH_" target="_blank"
+                        rel="noopener noreferrer" class="recurso-link reveal">
+                        <div class="rl-content">
+                            <div class="rl-left"><i class="fa-regular fa-folder-open"></i></div>
+                            <div class="rl-center">Actividades psicopedagógicas gratuitas</div>
+                            <div class="rl-right"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                    </a>
+
+                    <!-- Link 2: Calendarios -->
+                    <a href="https://drive.google.com/drive/folders/137XBnvuI9DRgTko9yDd1c7Oibd4CSk3h" target="_blank"
+                        rel="noopener noreferrer" class="recurso-link reveal">
+                        <div class="rl-content">
+                            <div class="rl-left"><i class="fa-regular fa-calendar-check"></i></div>
+                            <div class="rl-center">Calendarios imprimibles para niños</div>
+                            <div class="rl-right"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                    </a>
+
+                    <!-- Link 3: Capacitaciones -->
+                    <a href="#recursos" onclick="event.preventDefault();" class="recurso-link reveal"
+                        style="cursor:default;">
+                        <div class="rl-content">
+                            <div class="rl-left">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                            </div>
+                            <div class="rl-center">
+                                CAPACITACIONES
+                                <span class="rl-soon">Próximamente</span>
+                            </div>
+                            <div class="rl-right"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── FAQ ───────────────────────────────────────── -->
+        <section class="faq" id="faq">
+            <div class="faq-inner">
+                <div class="faq-head reveal">
+                    <div class="section-tag">FAQ</div>
+                    <h2 class="section-title">Preguntas <em>frecuentes</em></h2>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-q0">
+                        <span>¿Cómo es la primera consulta?</span>
+                        <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Se realiza una entrevista inicial para conocer la situación, establecer objetivos y definir
+                            el proceso de
+                            evaluación o acompañamiento.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-q1">
+                        <span>¿A partir de qué edad se puede consultar?</span>
+                        <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Atiendo a niños, adolescentes y adultos, adaptando los instrumentos estandarizados (como WAIS
+                            IV y WISC
+                            V) a las necesidades de cada etapa.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-q2">
+                        <span>¿Las sesiones son presenciales u online?</span>
+                        <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ofrezco ambas modalidades de atención. Podés optar por encuentros presenciales en Río Grande,
+                            Tierra del
+                            Fuego, o bajo la modalidad Online según te resulte más cómodo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-q3">
+                        <span>¿Cuánto dura el proceso de evaluación?</span>
+                        <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Las evaluaciones neurocognitivas se realizan a través de 3 a 6 sesiones, dependiendo de la
+                            complejidad
+                            del caso. Al finalizar se entrega su respectivo informe profesional.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-q4">
+                        <span>¿Trabajan con escuelas o maestros de apoyo?</span>
+                        <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, considero fundamental tanto los procesos internos como el contexto familiar y escolar,
+                            priorizando el
+                            trabajo interdisciplinario con otros profesionales y escuelas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-q5">
+                        <span>¿Cuáles son los horarios de atención y cómo agendo?</span>
+                        <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Los turnos se coordinan en horarios de mañana y tarde según disponibilidad. Podés agendar
+                            escribiéndome
+                            de forma directa a través de
+                            WhatsApp o por correo electrónico.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-q6">
+                        <span>¿Cuánto dura cada sesión?</span>
+                        <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Las sesiones tienen una duración aproximada de 40 minutos.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question" aria-expanded="false" id="faq-q7">
+                        <span>¿Hace falta un diagnóstico previo para consultar?</span>
+                        <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No es necesario. Muchas familias llegan sin un diagnóstico formal y precisamente a eso las
+                            ayudamos: a
+                            entender la situación, evaluar y trazar un camino. Podés consultar ante cualquier duda sobre
+                            aprendizaje,
+                            atención o desarrollo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CTA FINAL ─────────────────────────────────── -->
+        <section class="cta-band" id="contacto">
+            <div class="cta-band-inner reveal">
+                <div class="section-tag justify-center">Contacto</div>
+                <h2>¿Necesitás una <em>evaluación profesional?</em></h2>
+                <p>
+                    Podés comunicarte para recibir información sobre evaluaciones y acompañamiento psicopedagógico.
+                </p>
+                <p style="font-size:.82rem; color:rgba(255,255,255,.65); margin-top:-.5rem; margin-bottom:.5rem;">
+                    <i class="fa-regular fa-clock"></i> Turnos limitados por semana — Consultá disponibilidad
+                </p>
+                <div class="cta-band-actions mb-2rem">
+                    <div class="hero-actions-col">
+                        <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20deseo%20pautar%20una%20primera%20consulta."
+                            target="_blank" rel="noopener noreferrer" class="btn-wa" id="cta-whatsapp"
+                            onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'cta_final'});">
+                            <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
+                        </a>
+                        <a href="mailto:camilacabana05@gmail.com"
+                            style="display:inline-flex;align-items:center;gap:.5rem;margin-top:.8rem;font-size:.88rem;color:var(--mauve);text-decoration:none;font-weight:500;">
+                            <i aria-hidden="true" class="fa-solid fa-envelope"></i> camilacabana05@gmail.com
+                        </a>
+                        <span class="microcopy margin-top-sm"><i aria-hidden="true"
+                                class="fa-solid fa-lock color-wa-green"></i>
+                            Contacto 100% privado y confidencial.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- bloque ubicación SEO -->
+        <section
+            style="background:var(--white); padding:48px 2rem; border-top:1px solid rgba(155,114,170,.08); text-align:center;">
+            <div style="max-width:700px; margin:0 auto;">
+                <p
+                    style="font-size:.82rem; font-weight:600; letter-spacing:.08em; color:var(--mauve); text-transform:uppercase; margin-bottom:.6rem;">
+                    Ubicación</p>
+                <h2
+                    style="font-family:'DM Serif Display',serif; font-size:1.5rem; color:var(--text); margin-bottom:.8rem;">
+                    Atención psicopedagógica en <em style="color:var(--mauve);">Río Grande, Tierra del Fuego</em>
+                </h2>
+                <p style="color:var(--text-soft); font-size:.93rem; line-height:1.7; margin-bottom:1.4rem;">
+                    Evaluaciones neurocognitivas y acompañamiento psicopedagógico en Tierra del Fuego.
+                    Atención presencial en Río Grande.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ── FOOTER ────────────────────────────────────── -->
+    <footer>
+        © 2026 <strong class="color-white-75">Camila Cabaña</strong> · Psicopedagoga ·
+        <a href="mailto:camilacabana05@gmail.com" target="_blank" rel="noopener noreferrer">camilacabana05@gmail.com</a>
+        <div style="margin-top: .8rem;">
+            <a href="https://www.instagram.com/camii_psicope" target="_blank" rel="noopener noreferrer"
+                style="display:inline-flex;align-items:center;gap:.4rem;color:rgba(255,255,255,.8);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s;"
+                onmouseover="this.style.color='rgba(255,255,255,1)'"
+                onmouseout="this.style.color='rgba(255,255,255,.8)'">
+                <i class="fa-brands fa-instagram" style="font-size:1.1rem;"></i> @camii_psicope
+            </a>
+        </div>
+        <div
+            style="margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,.1); font-size: 0.78rem; color: rgba(255, 255, 255, .65);">
+            Diseño web por <a
+                href="https://wa.me/5492964510033?text=Hola%20Manuel,%20vi%20la%20web%20que%20hiciste%20y%20quiero%20una%20similar"
+                target="_blank" rel="noopener noreferrer"
+                style="color: rgba(255, 255, 255, .9); font-weight: 600;">Manuel
+                Márquez — ¿Querés una
+                web así?</a>
+        </div>
+    </footer>
+
+    <!-- ── WA FLOAT ──────────────────────────────────── -->
+    <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20vi%20tu%20pagina" target="_blank"
+        rel="noopener noreferrer" class="wa-float" aria-label="WhatsApp" id="wa-float-btn"
+        onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'flotante'});">
+        <i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
     </a>
-    <ul class="nav-links">
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#proceso">¿Cómo funciona?</a></li>
-      <li><a href="#faq">Preguntas</a></li>
-      <li><a href="#contacto" class="nav-cta">Solicitar turno</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Menú">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
 
-  <!-- ── HERO ─────────────────────────────────────── -->
-  <header class="hero" id="inicio">
-    <div class="hero-blob hero-blob-1"></div>
-    <div class="hero-blob hero-blob-2"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Nav scroll effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                navbar.classList.toggle('scrolled', window.scrollY > 40);
+            });
 
-    <div class="hero-inner">
-      <div class="hero-text">
-        <div class="hero-badge">
-          <i aria-hidden="true" class="fa-solid fa-graduation-cap"></i>
-          Psicopedagoga — Río Grande, Tierra del Fuego
-        </div>
-        <h1 class="hero-title">
-          Evaluación y acompañamiento psicopedagógico para <em>niños, adolescentes y adultos</em>
-        </h1>
-        <p class="hero-desc">
-          Acompaño procesos vinculados a dificultades de aprendizaje, desarrollo cognitivo, orientación vocacional y
-          evaluación psicopedagógica.
-        </p>
-        <div class="hero-actions hero-actions-container">
-          <div class="hero-actions-col">
-            <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20vi%20tu%20p%C3%A1gina%20y%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n%20para%20mi%20hijo."
-              target="_blank" rel="noopener noreferrer" class="btn-primary" id="hero-cta-main"
-              onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'hero'});">
-              <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Consultar por evaluación psicopedagógica
-            </a>
-            <div class="cta-trust">
-              <i class="fa-solid fa-shield-heart"></i>
-              <span>Respuesta dentro del día • Consulta inicial orientativa</span>
-            </div>
-          </div>
-          <a href="#servicios" class="btn-ghost align-start margin-top-sm" id="hero-cta-sec">
-            <i aria-hidden="true" class="fa-solid fa-arrow-down"></i> Ver servicios
-          </a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-num">Discapacidad</span>
-            <span class="stat-label">Evaluación y acompañamiento</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">100%</span>
-            <span class="stat-label">Personalizado</span>
-          </div>
-        </div>
-        <div style="margin-top:1.5rem;font-size:14px;color:#6b7280;">
-          Acompañando a familias en procesos de evaluación y aprendizaje.
-        </div>
-        <div class="mini-trust">
-          ⭐ Testimonios de familias que realizaron evaluaciones psicopedagógicas
-        </div>
-      </div>
+            // Reveal on scroll
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            reveals.forEach(el => observer.observe(el));
 
-      <div class="hero-photo-wrap">
-        <div class="hero-photo-card">
-          <div class="hero-photo-bg"></div>
-          <img src="./camila-cabana.png" alt="Camila Cabaña, psicopedagoga" loading="eager" fetchpriority="high"
-            decoding="async" class="hero-photo-img">
-          <div class="hero-photo-pill pill-1">
-            <i aria-hidden="true" class="fa-solid fa-brain"></i> Evaluaciones neurocognitivas
-          </div>
-          <div class="hero-photo-pill pill-2">
-            <i aria-hidden="true" class="fa-solid fa-user-check"></i> Atención personalizada
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+            // FAQ accordion
+            document.querySelectorAll('.faq-question').forEach(q => {
+                q.addEventListener('click', () => {
+                    const item = q.parentElement;
+                    const isOpen = item.classList.contains('open');
+                    document.querySelectorAll('.faq-item').forEach(i => {
+                        i.classList.remove('open');
+                        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    });
+                    if (!isOpen) {
+                        item.classList.add('open');
+                        q.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
 
-  <!-- shape divider -->
-  <div style="line-height:0; margin-bottom:-2px;">
-    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display:block;width:100%;height:80px;">
-      <path d="M0,0 C360,80 1080,0 1440,60 L1440,80 L0,80 Z" fill="#ffffff" />
-    </svg>
-  </div>
+            // Smooth nav links (mobile fallback)
+            document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
+                a.addEventListener('click', e => {
+                    const target = document.querySelector(a.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
 
-  <main>
-    <!-- ── AUTORIDAD ───────────────────────────────────── -->
-    <section class="autoridad reveal">
-      <div class="autoridad-inner">
-        <div class="autoridad-item">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <strong>Licenciada en Psicopedagogía</strong>
-          <span>Universidad Católica de Córdoba</span>
-        </div>
-        <div class="autoridad-item">
-          <i class="fa-solid fa-brain"></i>
-          <strong>Evaluaciones Neurocognitivas</strong>
-          <span>Instrumentos estandarizados WAIS IV y WISC V</span>
-        </div>
-        <div class="autoridad-item">
-          <i class="fa-solid fa-scale-balanced"></i>
-          <strong>Diplomada en Psicopedagogía Forense</strong>
-          <span>Universidad Abierta Interamericana</span>
-        </div>
-        <div class="autoridad-item">
-          <i class="fa-solid fa-users"></i>
-          <strong>Trabajo interdisciplinario</strong>
-          <span>Articulación con profesionales, familia y escuela</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── SOBRE MÍ ──────────────────────────────────── -->
-    <section class="about" id="sobre-mi">
-      <div class="about-inner">
-        <div class="about-img-wrap reveal">
-          <div class="about-img-frame">
-            <img src="cami-cabana.jpeg" alt="Camila Cabaña, foto profesional en consultorio" loading="lazy"
-              decoding="async">
-          </div>
-          <div class="about-accent"></div>
-          <div class="about-card-float about-card-float-pos">
-            <div class="icon-wrap"><i aria-hidden="true" class="fa-solid fa-graduation-cap"></i></div>
-            <p>Licenciada en Psicopedagogía</p>
-            <span>Universidad Católica de Córdoba</span>
-          </div>
-        </div>
-
-        <div class="about-text reveal">
-          <div class="section-tag">El Enfoque</div>
-          <h2 class="section-title">Detrás de cada consulta hay una historia que <em>merece ser escuchada</em></h2>
-          <p>
-            Mi enfoque es integrador, combinando perspectivas cognitivas, socioculturales y neuropsicológicas.
-          </p>
-          <p>
-            Considero fundamental tanto los procesos internos del aprendizaje como el contexto familiar y escolar,
-            priorizando el trabajo interdisciplinario con otros profesionales.
-          </p>
-          <div class="about-perks">
-            <div class="perk">
-              <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-shield-cat"></i></div>
-              <div class="perk-text">
-                <strong>Diplomada en Psicopedagogía Forense</strong>
-                <span>Universidad Abierta Interamericana — 2024</span>
-              </div>
-            </div>
-            <div class="perk">
-              <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-users-viewfinder"></i></div>
-              <div class="perk-text">
-                <strong>Evaluaciones Neurocognitivas</strong>
-                <span>Manejo de instrumentos estandarizados, incluyendo WAIS IV y WISC V.</span>
-              </div>
-            </div>
-            <div class="perk">
-              <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-seedling"></i></div>
-              <div class="perk-text">
-                <strong>Perfil de Pacientes</strong>
-                <span>Atención a niños, adolescentes y adultos.</span>
-              </div>
-            </div>
-            <div class="perk">
-              <div class="perk-icon"><i aria-hidden="true" class="fa-solid fa-calendar-check"></i></div>
-              <div class="perk-text">
-                <strong>2 Años de Experiencia Clínica</strong>
-                <span>Acompañando procesos de evaluación y seguimiento psicopedagógico desde 2024.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── SITUACIONES COMUNES ─────────────────────────── -->
-    <section class="situaciones" id="servicios">
-      <div class="situaciones-inner">
-        <div class="section-tag reveal" style="display:inline-block;">Psicopedagogía</div>
-        <h2 class="section-title reveal">¿En qué situaciones puede
-          <em>ayudar?</em>
-        </h2>
-        <div class="services-grid">
-          <div class="service-card reveal">
-            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-brain"></i></div>
-            <h4>Evaluaciones Neurocognitivas</h4>
-            <img src="./Evaluaciones-Neurocognitivas.jpeg" alt="Materiales de evaluación neurocognitiva WAIS"
-              class="service-img" loading="eager" decoding="async">
-            <p>Evaluación integral del perfil cognitivo con instrumentos estandarizados (WAIS IV, WISC V) para conocer
-              las fortalezas y dificultades de cada persona.</p>
-            <span class="service-tag">Perfil Cognitivo</span>
-          </div>
-          <div class="service-card reveal">
-            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-book-open"></i></div>
-            <h4>Dificultades en la Lectura y Escritura</h4>
-            <img src="./Dificultades-en-la-lectura-y-escritura.jpeg"
-              alt="Sesión de psicopedagogía para dificultades lectoras" class="service-img" loading="eager"
-              decoding="async">
-            <p>Acompañamiento clínico para niños y adolescentes que presentan dificultades en la adquisición y el
-              desarrollo de la lectura o la escritura.</p>
-            <span class="service-tag">Aprendizaje</span>
-          </div>
-          <div class="service-card reveal">
-            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-puzzle-piece"></i></div>
-            <h4>Memoria, Atención y Concentración</h4>
-            <img src="Memoria-atencion-y-concentracion.jpeg"
-              alt="Intervención en dificultades de atención y concentración" class="service-img" loading="lazy"
-              decoding="async">
-            <p>Evaluación e intervención en dificultades vinculadas a la atención, la memoria y la concentración, en
-              articulación con el contexto escolar y familiar.</p>
-            <span class="service-tag">Atención</span>
-          </div>
-          <div class="service-card reveal">
-            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-chart-line"></i></div>
-            <h4>Estrategias y Técnicas de Estudio</h4>
-            <img src="./Herramientas-y-tecnicas-de-estudio.jpeg" alt="Acompañamiento en técnicas y hábitos de estudio"
-              class="service-img" loading="lazy" decoding="async">
-            <p>Desarrollo de estrategias y hábitos de estudio personalizados para mejorar el rendimiento académico y la
-              autonomía del estudiante.</p>
-            <span class="service-tag">Rendimiento</span>
-          </div>
-          <div class="service-card reveal">
-            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-compass"></i></div>
-            <h4>Orientación Vocacional</h4>
-            <img src="./Orientacion-vocacional.jpeg" alt="Proceso de orientación vocacional para adolescentes"
-              class="service-img" style="object-position: bottom;" loading="lazy" decoding="async">
-            <p>Proceso de acompañamiento para adolescentes y jóvenes que buscan identificar sus intereses, habilidades y
-              posibles caminos académicos o profesionales.</p>
-            <span class="service-tag">Vocación</span>
-          </div>
-          <div class="service-card reveal">
-            <div class="service-icon"><i aria-hidden="true" class="fa-solid fa-hands-holding-child"></i></div>
-            <h4>Acompañamiento en el Aprendizaje</h4>
-            <img src="./Acompañamiento.png" alt="Acompañamiento interdisciplinario en el proceso de aprendizaje"
-              class="service-img" loading="lazy" decoding="async">
-            <p>Seguimiento continuo e interdisciplinario junto a escuelas y familias, para sostener el proceso de
-              aprendizaje con una mirada integral.</p>
-            <span class="service-tag">Seguimiento</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA mid-page -->
-    <div class="reveal"
-      style="text-align:center; padding: 56px 2rem; background: var(--white); border-bottom: 1px solid rgba(155,114,170,.08);">
-      <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20vi%20tu%20p%C3%A1gina%20y%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n."
-        target="_blank" rel="noopener noreferrer" class="btn-primary" id="mid-cta-whatsapp"
-        onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'mid_page'});">
-        <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
-      </a>
-      <div class="cta-trust" style="justify-content:center; margin-top:.7rem;">
-        <i class="fa-solid fa-lock"></i>
-        <span>Consulta confidencial • Respuesta dentro del día</span>
-      </div>
-    </div>
-
-
-
-    <!-- ── PROCESO ───────────────────────────────────── -->
-    <section class="process" id="proceso">
-      <div class="process-inner">
-        <div class="process-head reveal">
-          <div class="section-tag">¿Cómo funciona?</div>
-          <h2 class="section-title">El camino hacia el <em>cambio</em></h2>
-          <p class="section-subtitle mx-auto">
-            Un proceso claro y acompañado desde el primer contacto hasta el resultado.
-          </p>
-        </div>
-        <div class="process-steps">
-          <div class="process-step reveal">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h4>Primera consulta</h4>
-              <p>Nos reunimos para comprender tu situación, responder tus dudas y evaluar juntos el mejor camino a
-                seguir. Sin compromiso.</p>
-            </div>
-          </div>
-          <div class="process-step reveal">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h4>Evaluación neurocognitiva</h4>
-              <p>Realizamos un proceso de evaluación neurocognitiva estructurado en 3 a 6 sesiones mediante instrumentos
-                estandarizados.</p>
-            </div>
-          </div>
-          <div class="process-step reveal">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h4>Informes profesionales</h4>
-              <p>Te explico los resultados de forma clara a través de una devolución y te entrego tu informe profesional
-                detallado.</p>
-            </div>
-          </div>
-          <div class="process-step reveal">
-            <div class="step-number">4</div>
-            <div class="step-content">
-              <h4>Trabajo interdisciplinario</h4>
-              <p>Seguimiento continuo y foco en el trabajo interdisciplinario con profesionales, familia y escuela.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── TESTIMONIOS ───────────────────────────────── -->
-    <section class="testimonials" id="testimonios">
-      <div class="testimonials-inner">
-        <div class="testimonials-head reveal">
-          <div class="section-tag">Testimonios</div>
-          <h2 class="section-title white">Experiencias de familias que acompañé</h2>
-        </div>
-        <div class="testi-grid">
-          <div class="testi-card reveal">
-            <div class="testi-stars">
-              <i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i
-                aria-hidden="true" class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i aria-hidden="true"
-                class="fa-solid fa-star"></i>
-            </div>
-            <blockquote>
-              "En el año que Theo asistió conocí a una profesional súper amorosa, atenta y predispuesta con los niños.
-              Siempre brindó la mejor atención, comprendiendo cada situación y acompañándonos con mucha paciencia y
-              dedicación.
-              Durante la evaluación neurocognitiva nos explicó cada paso con claridad y nos dio mucha tranquilidad.
-              Una profesional increíble."
-            </blockquote>
-            <div class="testi-author">
-              <div class="testi-avatar av1"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
-              <div>
-                <span class="testi-name">Melanie Echeverría</span>
-                <span class="testi-role">Mamá de Theo</span>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card reveal">
-            <div class="testi-stars">
-              <i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i
-                aria-hidden="true" class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i aria-hidden="true"
-                class="fa-solid fa-star"></i>
-            </div>
-            <blockquote>
-              "Quiero compartir nuestra experiencia con Camila. Desde el primer momento nos recibió con mucho cariño y
-              dedicación.
-              Mi hijo siempre esperaba con entusiasmo sus sesiones, donde también había momentos de juego que le
-              encantaban.
-              Es una profesional muy cálida y estamos muy agradecidos por todo el acompañamiento."
-            </blockquote>
-            <div class="testi-author">
-              <div class="testi-avatar av2"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
-              <div>
-                <span class="testi-name">Laura López</span>
-                <span class="testi-role">Mamá de Thomas</span>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card reveal">
-            <div class="testi-stars">
-              <i aria-hidden="true" class="fa-solid fa-star"></i><i aria-hidden="true" class="fa-solid fa-star"></i><i
-                aria-hidden="true" class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i aria-hidden="true"
-                class="fa-solid fa-star"></i>
-            </div>
-            <blockquote>
-              "El proceso con la psicopedagoga fue muy positivo durante todo el tiempo que trabajamos juntos.
-              Es una excelente profesional y el acompañamiento fue de gran ayuda."
-            </blockquote>
-            <div class="testi-author">
-              <div class="testi-avatar av3"><i aria-hidden="true" class="fa-solid fa-check"></i></div>
-              <div>
-                <span class="testi-name">Diego García</span>
-                <span class="testi-role">Papá de Max</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA post-testimonios -->
-    <div class="reveal" style="text-align:center; padding: 48px 2rem; background:var(--cream);">
-      <p style="font-size:.97rem; color:var(--text-soft); margin-bottom:1.2rem;">Si lo que leíste te identificó, este es
-        el momento de dar el primer paso.</p>
-      <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20vi%20los%20testimonios%20y%20quisiera%20consultar%20por%20una%20evaluaci%C3%B3n."
-        target="_blank" rel="noopener noreferrer" class="btn-wa" id="post-testi-whatsapp"
-        onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'post_testimonios'});">
-        <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
-      </a>
-      <div class="cta-trust" style="justify-content:center; margin-top:.7rem;">
-        <i class="fa-solid fa-lock"></i>
-        <span>Consulta confidencial • Sin compromiso</span>
-      </div>
-    </div>
-
-    <!-- ── FAQ ───────────────────────────────────────── -->
-    <section class="faq" id="faq">
-      <div class="faq-inner">
-        <div class="faq-head reveal">
-          <div class="section-tag">FAQ</div>
-          <h2 class="section-title">Preguntas <em>frecuentes</em></h2>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-question" aria-expanded="false" id="faq-q0">
-            <span>¿Cómo es la primera consulta?</span>
-            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
-          </button>
-          <div class="faq-answer">
-            <p>Se realiza una entrevista inicial para conocer la situación, establecer objetivos y definir el proceso de
-              evaluación o acompañamiento.</p>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-question" aria-expanded="false" id="faq-q1">
-            <span>¿A partir de qué edad se puede consultar?</span>
-            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
-          </button>
-          <div class="faq-answer">
-            <p>Atiendo a niños, adolescentes y adultos, adaptando los instrumentos estandarizados (como WAIS IV y WISC
-              V) a las necesidades de cada etapa.</p>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-question" aria-expanded="false" id="faq-q2">
-            <span>¿Las sesiones son presenciales u online?</span>
-            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
-          </button>
-          <div class="faq-answer">
-            <p>Ofrezco ambas modalidades de atención. Podés optar por encuentros presenciales en Río Grande, Tierra del
-              Fuego, o bajo la modalidad Online según te resulte más cómodo.</p>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-question" aria-expanded="false" id="faq-q3">
-            <span>¿Cuánto dura el proceso de evaluación?</span>
-            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
-          </button>
-          <div class="faq-answer">
-            <p>Las evaluaciones neurocognitivas se realizan a través de 3 a 6 sesiones, dependiendo de la complejidad
-              del caso. Al finalizar se entrega su respectivo informe profesional.</p>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-question" aria-expanded="false" id="faq-q4">
-            <span>¿Trabajan con escuelas o maestros de apoyo?</span>
-            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
-          </button>
-          <div class="faq-answer">
-            <p>Sí, considero fundamental tanto los procesos internos como el contexto familiar y escolar, priorizando el
-              trabajo interdisciplinario con otros profesionales y escuelas.</p>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-question" aria-expanded="false" id="faq-q5">
-            <span>¿Cuáles son los horarios de atención y cómo agendo?</span>
-            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
-          </button>
-          <div class="faq-answer">
-            <p>Los turnos se coordinan en horarios de mañana y tarde según disponibilidad. Podés agendar escribiéndome
-              de forma directa a través de
-              WhatsApp o por correo electrónico.</p>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-question" aria-expanded="false" id="faq-q6">
-            <span>¿Cuánto dura cada sesión?</span>
-            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
-          </button>
-          <div class="faq-answer">
-            <p>Las sesiones tienen una duración aproximada de 40 minutos.</p>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <button class="faq-question" aria-expanded="false" id="faq-q7">
-            <span>¿Hace falta un diagnóstico previo para consultar?</span>
-            <div class="faq-icon"><i aria-hidden="true" class="fa-solid fa-plus"></i></div>
-          </button>
-          <div class="faq-answer">
-            <p>No es necesario. Muchas familias llegan sin un diagnóstico formal y precisamente a eso las ayudamos: a
-              entender la situación, evaluar y trazar un camino. Podés consultar ante cualquier duda sobre aprendizaje,
-              atención o desarrollo.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── CTA FINAL ─────────────────────────────────── -->
-    <section class="cta-band" id="contacto">
-      <div class="cta-band-inner reveal">
-        <div class="section-tag justify-center">Contacto</div>
-        <h2>¿Necesitás una <em>evaluación profesional?</em></h2>
-        <p>
-          Podés comunicarte para recibir información sobre evaluaciones y acompañamiento psicopedagógico.
-        </p>
-        <p style="font-size:.82rem; color:rgba(255,255,255,.65); margin-top:-.5rem; margin-bottom:.5rem;">
-          <i class="fa-regular fa-clock"></i> Turnos limitados por semana — Consultá disponibilidad
-        </p>
-        <div class="cta-band-actions mb-2rem">
-          <div class="hero-actions-col">
-            <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20deseo%20pautar%20una%20primera%20consulta."
-              target="_blank" rel="noopener noreferrer" class="btn-wa" id="cta-whatsapp"
-              onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'cta_final'});">
-              <i aria-hidden="true" class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
-            </a>
-            <a href="mailto:camilacabana05@gmail.com"
-              style="display:inline-flex;align-items:center;gap:.5rem;margin-top:.8rem;font-size:.88rem;color:var(--mauve);text-decoration:none;font-weight:500;">
-              <i aria-hidden="true" class="fa-solid fa-envelope"></i> camilacabana05@gmail.com
-            </a>
-            <span class="microcopy margin-top-sm"><i aria-hidden="true" class="fa-solid fa-lock color-wa-green"></i>
-              Contacto 100% privado y confidencial.</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- bloque ubicación SEO -->
-    <section
-      style="background:var(--white); padding:48px 2rem; border-top:1px solid rgba(155,114,170,.08); text-align:center;">
-      <div style="max-width:700px; margin:0 auto;">
-        <p
-          style="font-size:.82rem; font-weight:600; letter-spacing:.08em; color:var(--mauve); text-transform:uppercase; margin-bottom:.6rem;">
-          Ubicación</p>
-        <h2 style="font-family:'DM Serif Display',serif; font-size:1.5rem; color:var(--text); margin-bottom:.8rem;">
-          Atención psicopedagógica en <em style="color:var(--mauve);">Río Grande, Tierra del Fuego</em>
-        </h2>
-        <p style="color:var(--text-soft); font-size:.93rem; line-height:1.7; margin-bottom:1.4rem;">
-          Evaluaciones neurocognitivas y acompañamiento psicopedagógico en Tierra del Fuego.
-          Atención presencial en Río Grande.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <!-- ── FOOTER ────────────────────────────────────── -->
-  <footer>
-    © 2026 <strong class="color-white-75">Camila Cabaña</strong> · Psicopedagoga ·
-    <a href="mailto:camilacabana05@gmail.com" target="_blank" rel="noopener noreferrer">camilacabana05@gmail.com</a>
-    <div style="margin-top: .8rem;">
-      <a href="https://www.instagram.com/camii_psicope" target="_blank" rel="noopener noreferrer"
-        style="display:inline-flex;align-items:center;gap:.4rem;color:rgba(255,255,255,.8);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s;"
-        onmouseover="this.style.color='rgba(255,255,255,1)'" onmouseout="this.style.color='rgba(255,255,255,.8)'">
-        <i class="fa-brands fa-instagram" style="font-size:1.1rem;"></i> @camii_psicope
-      </a>
-    </div>
-    <div
-      style="margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,.1); font-size: 0.78rem; color: rgba(255, 255, 255, .65);">
-      Diseño web por <a
-        href="https://wa.me/5492964510033?text=Hola%20Manuel,%20vi%20la%20web%20que%20hiciste%20y%20quiero%20una%20similar"
-        target="_blank" rel="noopener noreferrer" style="color: rgba(255, 255, 255, .9); font-weight: 600;">Manuel
-        Márquez — ¿Querés una
-        web así?</a>
-    </div>
-  </footer>
-
-  <!-- ── WA FLOAT ──────────────────────────────────── -->
-  <a href="https://wa.me/5493517177784?text=Hola%20Camila,%20vi%20tu%20pagina" target="_blank" rel="noopener noreferrer"
-    class="wa-float" aria-label="WhatsApp" id="wa-float-btn"
-    onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'flotante'});">
-    <i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Nav scroll effect
-      const navbar = document.getElementById('navbar');
-      window.addEventListener('scroll', () => {
-        navbar.classList.toggle('scrolled', window.scrollY > 40);
-      });
-
-      // Reveal on scroll
-      const reveals = document.querySelectorAll('.reveal');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, i) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => entry.target.classList.add('visible'), i * 80);
-            observer.unobserve(entry.target);
-          }
+            // Mobile nav toggle
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+            // Cerrar al hacer click en un link
+            navLinks.querySelectorAll('a').forEach(a => {
+                a.addEventListener('click', () => navLinks.classList.remove('show'));
+            });
         });
-      }, { threshold: 0.12 });
-      reveals.forEach(el => observer.observe(el));
-
-      // FAQ accordion
-      document.querySelectorAll('.faq-question').forEach(q => {
-        q.addEventListener('click', () => {
-          const item = q.parentElement;
-          const isOpen = item.classList.contains('open');
-          document.querySelectorAll('.faq-item').forEach(i => {
-            i.classList.remove('open');
-            i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-          });
-          if (!isOpen) {
-            item.classList.add('open');
-            q.setAttribute('aria-expanded', 'true');
-          }
-        });
-      });
-
-      // Smooth nav links (mobile fallback)
-      document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
-        a.addEventListener('click', e => {
-          const target = document.querySelector(a.getAttribute('href'));
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
-      });
-
-      // Mobile nav toggle
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.querySelector('.nav-links');
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-      });
-      // Cerrar al hacer click en un link
-      navLinks.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => navLinks.classList.remove('show'));
-      });
-    });
-  </script>
+    </script>
 </body>
 
 </html>
