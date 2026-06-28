@@ -85,6 +85,7 @@
 
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
 
     body {
@@ -1264,7 +1265,7 @@
     .hero-actions-col {
       display: flex;
       flex-direction: column;
-      width: max-content;
+      max-width: 100%;
       align-items: flex-start;
     }
 
@@ -1456,6 +1457,16 @@
       .hero {
         min-height: auto;
         padding: 90px 1.5rem 50px;
+      }
+
+      .hero-actions-col {
+        max-width: 100%;
+        width: 100%;
+        align-items: center;
+      }
+
+      .btn-primary {
+        max-width: 100%;
       }
     }
 
